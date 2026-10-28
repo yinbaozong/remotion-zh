@@ -1,0 +1,100 @@
+import React from 'react';
+import {useColorMode} from './layout/use-color-mode';
+import {MakeVideosLinks} from './MakeVideosLinks';
+import {useTransparentVideoSource} from './use-transparent-video-source';
+
+const EvaluateRemotionSection: React.FC = () => {
+	const {colorMode} = useColorMode();
+	const licenseVideoSrc = useTransparentVideoSource({
+		fallbackVideoSrc:
+			colorMode === 'dark'
+				? '/img/license-questions-dark.mp4'
+				: '/img/license-questions.mp4',
+		videoSrc:
+			colorMode === 'dark'
+				? '/img/license-questions-dark.webm'
+				: '/img/license-questions.webm',
+	});
+	const expertsVideoSrc = useTransparentVideoSource({
+		fallbackVideoSrc: '/img/experts-graphic.mp4',
+		videoSrc: '/img/experts-graphic.webm',
+	});
+
+	return (
+		<>
+			<div className="flex min-w-0 basis-0 flex-1 flex-col">
+				{/* Crop only the top 46% on mobile, preserving the video's bottom padding. */}
+				<div className="relative aspect-[50/27] w-full max-w-[270px] self-start overflow-hidden min-[900px]:aspect-square">
+					{licenseVideoSrc ? (
+						<video
+							src={licenseVideoSrc}
+							muted
+							autoPlay
+							playsInline
+							loop
+							preload="metadata"
+							className="absolute top-0 left-0 w-full max-w-none -translate-y-[46%] cursor-default! min-[900px]:translate-y-0"
+						/>
+					) : null}
+				</div>
+				<div className="font-brand">
+					<h2 className="text-2xl fontbrand leading-[1.1] font-medium">
+						License questions?
+					</h2>
+					<p className="text-balance leading-relaxed">
+						Book a 20 minute evaluation call or write us an email.
+					</p>
+					<MakeVideosLinks
+						links={[
+							{
+								label: 'Schedule a call',
+								href: 'https://cal.com/remotion/evaluate',
+								target: '_blank',
+							},
+							{
+								label: 'Write an email',
+								href: 'mailto:hi@remotion.dev',
+								target: '_blank',
+							},
+						]}
+					/>
+				</div>
+			</div>
+			<div className="flex min-w-0 basis-0 flex-1 flex-col">
+				<div className="flex aspect-square w-full max-w-[270px] self-start items-start justify-start">
+					{expertsVideoSrc ? (
+						<video
+							src={expertsVideoSrc}
+							muted
+							autoPlay
+							playsInline
+							loop
+							preload="metadata"
+							className="relative max-h-full max-w-full cursor-default! object-contain"
+						/>
+					) : null}
+				</div>
+				<div className="font-brand">
+					<h2 className="text-2xl fontbrand leading-[1.1] font-medium">
+						Get help from humans
+					</h2>
+					<p className="text-balance leading-relaxed">
+						Chat with us and our community or contact our experts for paid work.
+					</p>
+					<MakeVideosLinks
+						links={[
+							{
+								label: 'Discord',
+								href: 'https://remotion.dev/discord',
+								target: '_blank',
+							},
+							{label: 'Experts', href: '/experts'},
+						]}
+					/>
+				</div>
+			</div>
+		</>
+	);
+};
+
+export default EvaluateRemotionSection;
