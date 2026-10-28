@@ -69,7 +69,7 @@ test('formats video and audio sections for current assets', () => {
 		audio: [
 			{label: '时长', value: '00:10.00'},
 			{label: '编码器', value: 'AAC'},
-			{label: 'Sample rate', value: '48000 Hz'},
+			{label: '采样率', value: '48000 Hz'},
 		],
 		video: [
 			{label: '尺寸', value: '1920 × 1080'},
@@ -127,7 +127,7 @@ test('formats audio-only assets', () => {
 		audio: [
 			{label: '时长', value: '02:05.50'},
 			{label: '编码器', value: 'MP3'},
-			{label: 'Sample rate', value: '44100 Hz'},
+			{label: '采样率', value: '44100 Hz'},
 		],
 		video: null,
 	});

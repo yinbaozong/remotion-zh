@@ -1332,7 +1332,7 @@ export const WebMcp: FC = () => {
 			modelContext.registerTool(
 				{
 					name: 'add_guide',
-					title: 'Add Studio guide',
+					title: '添加参考线',
 					description:
 						'Add a guide to the current Remotion Studio composition. A vertical guide position is an x-coordinate from the left edge and a horizontal guide position is a y-coordinate from the top edge, in composition pixels.',
 					inputSchema: {
@@ -1464,7 +1464,7 @@ export const WebMcp: FC = () => {
 			modelContext.registerTool(
 				{
 					name: 'play',
-					title: 'Play Studio composition',
+					title: '播放',
 					description:
 						'Start playing the current Remotion Studio composition from the current frame.',
 					inputSchema: {
@@ -1501,7 +1501,7 @@ export const WebMcp: FC = () => {
 			modelContext.registerTool(
 				{
 					name: 'pause',
-					title: 'Pause Studio composition',
+					title: '暂停',
 					description:
 						'Pause the current Remotion Studio composition at the current frame.',
 					inputSchema: {
@@ -1532,7 +1532,7 @@ export const WebMcp: FC = () => {
 			modelContext.registerTool(
 				{
 					name: 'mute',
-					title: 'Mute Studio composition',
+					title: '静音',
 					description:
 						'Mute audio playback for the current Remotion Studio composition.',
 					inputSchema: {
@@ -1560,7 +1560,7 @@ export const WebMcp: FC = () => {
 			modelContext.registerTool(
 				{
 					name: 'unmute',
-					title: 'Unmute Studio composition',
+					title: '取消静音',
 					description:
 						'Unmute audio playback for the current Remotion Studio composition.',
 					inputSchema: {

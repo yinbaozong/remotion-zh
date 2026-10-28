@@ -213,7 +213,7 @@ const WelcomeActions: React.FC = () => {
 								<SearchIcon color={color} style={inspectorActionIconStyle} />
 							)}
 						>
-							Open composition
+							打开作品
 						</InspectorQuickAction>
 					) : null}
 					{canMutateProject ? (
@@ -234,7 +234,7 @@ const WelcomeActions: React.FC = () => {
 									<UploadIcon color={color} style={inspectorActionIconStyle} />
 								)}
 							>
-								Import asset
+								导入素材
 							</InspectorQuickAction>
 							<InspectorQuickAction
 								disabled={false}
@@ -247,7 +247,7 @@ const WelcomeActions: React.FC = () => {
 									/>
 								)}
 							>
-								Browse Elements
+								浏览元素
 							</InspectorQuickAction>
 						</>
 					) : null}

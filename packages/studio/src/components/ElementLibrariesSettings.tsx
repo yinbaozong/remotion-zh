@@ -228,7 +228,7 @@ export const ElementLibrariesSettings: React.FC = () => {
 			<p style={description}>
 				Add libraries to browse their elements in Studio.
 			</p>
-			<div role="list" aria-label="Element Libraries">
+			<div role="list" aria-label="元素库">
 				<div role="listitem" style={libraryRow}>
 					<BrowseElementsIcon
 						aria-hidden
@@ -299,7 +299,7 @@ export const ElementLibrariesSettings: React.FC = () => {
 					</div>
 				))}
 			</div>
-			<h3 style={addLibraryHeading}>Add new library</h3>
+			<h3 style={addLibraryHeading}>添加新库</h3>
 			<div style={addLibraryActions}>
 				<Button
 					onClick={discoverThirdPartyElements}
@@ -311,7 +311,7 @@ export const ElementLibrariesSettings: React.FC = () => {
 						color={CURRENT_COLOR}
 						style={addLibraryButtonIcon}
 					/>
-					Explore libraries
+					浏览元素库
 				</Button>
 				<Button
 					onClick={() => setIsAddByUrlVisible(true)}
@@ -323,7 +323,7 @@ export const ElementLibrariesSettings: React.FC = () => {
 						color={CURRENT_COLOR}
 						style={addLibraryButtonIcon}
 					/>
-					Add by URL
+					通过 URL 添加
 				</Button>
 			</div>
 			{isAddByUrlVisible ? (

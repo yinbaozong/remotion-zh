@@ -61,7 +61,7 @@ const DeleteCompositionLoaded: React.FC<{
 
 	return (
 		<>
-			<ModalHeader title={'Delete composition'} />
+			<ModalHeader title={'删除作品'} />
 			<form onSubmit={onSubmit}>
 				<div style={content}>
 					Do you want to delete the{' '}

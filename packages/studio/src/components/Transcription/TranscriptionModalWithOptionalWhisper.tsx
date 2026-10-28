@@ -84,7 +84,7 @@ const INSTALL_MESSAGE = (
 				className={`${HOVERABLE_CLASS_NAME} ${FOCUS_VISIBLE_ONLY_CLASS_NAME}`}
 				style={summaryStyle}
 			>
-				Model options and download sizes
+				模型选项与下载大小
 			</summary>
 			<ul style={listStyle}>
 				{modelSizes.map(({model, size}) => (
@@ -112,7 +112,7 @@ export const TranscriptionModalWithOptionalWhisper: React.FC<{
 			installButtonText="Install packages"
 			installMessage={INSTALL_MESSAGE}
 			packageName={WHISPER_WEBGPU_PACKAGE}
-			title={state.target === null ? 'Transcribe' : 'Generate captions'}
+			title={state.target === null ? '转写' : '生成字幕'}
 		>
 			<Suspense fallback={null}>
 				<LazyTranscriptionModal {...state} />

@@ -866,7 +866,7 @@ const TimelineSequenceBar: React.FC<{
 									}}
 								/>
 							) : null}
-							{s.timelineTrack?.role === 'overlay' ? 'Overlay' : s.displayName}
+							{s.timelineTrack?.role === 'overlay' ? '叠加' : s.displayName}
 						</TimelineSequenceLabel>
 					)}
 				</div>

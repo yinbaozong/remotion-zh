@@ -164,7 +164,7 @@ const dimensionPresets = [
 	{height: 1920, label: 'Full HD', width: 1080},
 	{height: 720, label: 'HD', width: 1280},
 	{height: 1280, label: 'HD', width: 720},
-	{height: 1080, label: 'Square', width: 1080},
+	{height: 1080, label: '正方形', width: 1080},
 ] as const;
 
 const frameRatePresets = [23.976, 24, 25, 29.97, 30, 50, 60] as const;
@@ -563,7 +563,7 @@ export const CompositionMetadata: React.FC<{
 									pendingValues.width !== undefined ||
 									pendingValues.height !== undefined
 								}
-								aria-label="Choose dimension preset"
+								aria-label="选择尺寸预设"
 								values={dimensionPresetValues}
 								visible={hovered}
 							/>
@@ -599,7 +599,7 @@ export const CompositionMetadata: React.FC<{
 								{disabled || fpsIsComputed ? null : (
 									<PresetDropdown
 										disabled={pendingValues.fps !== undefined}
-										aria-label="Choose frame rate preset"
+										aria-label="选择帧率预设"
 										values={frameRatePresetValues}
 										visible={hovered}
 									/>
@@ -625,7 +625,7 @@ export const CompositionMetadata: React.FC<{
 								{disabled || durationIsComputed ? null : (
 									<PresetDropdown
 										disabled={pendingValues.durationInFrames !== undefined}
-										aria-label="Choose duration preset"
+										aria-label="选择时长预设"
 										visible={hovered}
 										values={() => {
 											const timelineEnd =

@@ -94,7 +94,7 @@ export const DefaultEditorSettings: React.FC = () => {
 		const noPreference: ComboboxValue = {
 			id: NO_PREFERENCE_ID,
 			keyHint: null,
-			label: 'No preference',
+			label: '无偏好',
 			leftItem: selectedEditor === null ? <Checkmark /> : null,
 			onClick: () => {
 				setSelectedEditor(null);
@@ -135,7 +135,7 @@ export const DefaultEditorSettings: React.FC = () => {
 		const noPreference: ComboboxValue = {
 			id: NO_PREFERENCE_ID,
 			keyHint: null,
-			label: 'No preference',
+			label: '无偏好',
 			leftItem: selectedCodingAgent === null ? <Checkmark /> : null,
 			onClick: () => {
 				setSelectedCodingAgent(null);
@@ -262,7 +262,7 @@ export const DefaultEditorSettings: React.FC = () => {
 					</div>
 				</div>
 				<div style={optionRow}>
-					<div style={label}>Default coding agent</div>
+					<div style={label}>默认编程助手</div>
 					<div style={rightColumn}>
 						{codingAgentInfo === null && displayedError === null ? (
 							<p style={rightDescription}>Loading installed coding agents...</p>
@@ -277,7 +277,7 @@ export const DefaultEditorSettings: React.FC = () => {
 								values={codingAgentValues}
 								selectedId={selectedCodingAgent ?? NO_PREFERENCE_ID}
 								style={comboBoxStyle}
-								aria-label="Default coding agent"
+								aria-label="默认编程助手"
 							/>
 						)}
 					</div>

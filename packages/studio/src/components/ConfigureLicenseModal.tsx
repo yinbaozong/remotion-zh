@@ -228,13 +228,13 @@ export const LicenseSettings: React.FC = () => {
 			<div style={content}>
 				<LicenseExplanation />
 				<Spacing y={2} />
-				<div aria-label="License type" role="radiogroup">
+				<div aria-label="许可证类型" role="radiogroup">
 					<RadioButton
 						checked={licenseType === 'free'}
 						disabled={false}
 						onClick={toggleFreeLicense}
 					>
-						I am eligible for the Free License
+						我符合免费许可证条件
 					</RadioButton>
 					{licenseType === 'free' ? (
 						<p style={freeLicenseMessage}>That&apos;s it! Enjoy Remotion.</p>
@@ -244,7 +244,7 @@ export const LicenseSettings: React.FC = () => {
 						disabled={false}
 						onClick={toggleCompanyLicense}
 					>
-						I need a Company License
+						我需要公司许可证
 					</RadioButton>
 					{licenseType === 'company' ? (
 						<div style={companyLicenseContent}>

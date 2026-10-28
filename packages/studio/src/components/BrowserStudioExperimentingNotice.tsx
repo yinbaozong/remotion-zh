@@ -173,7 +173,7 @@ export const BrowserStudioExperimentingNotice: React.FC = () => {
 					<p style={{...bodyTextStyle, margin: 0}}>
 						To keep working on your project, use{' '}
 						<strong style={{...bodyTextStyle, fontWeight: 'bold'}}>
-							Download project
+							下载项目
 						</strong>{' '}
 						and continue locally.
 					</p>

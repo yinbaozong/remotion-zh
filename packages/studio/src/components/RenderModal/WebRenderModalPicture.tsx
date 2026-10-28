@@ -84,7 +84,7 @@ export const WebRenderModalPicture: React.FC<WebRenderModalPictureProps> = ({
 						onValueChanged={setKeyframeIntervalInSeconds}
 					/>
 					<div style={optionRow}>
-						<div style={label}>Transparent</div>
+						<div style={label}>透明</div>
 						<div style={rightRow}>
 							<Checkbox
 								checked={transparent}

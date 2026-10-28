@@ -68,7 +68,7 @@ const Status: React.FC<{readonly job: VideoMattingJob}> = ({job}) => {
 			<div
 				style={statusIcon}
 				role="progressbar"
-				aria-label="Background removal progress"
+				aria-label="背景移除进度"
 				aria-valuemin={0}
 				aria-valuemax={100}
 				aria-valuenow={Math.round(job.progress.value * 100)}

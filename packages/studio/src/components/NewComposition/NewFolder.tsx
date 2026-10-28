@@ -125,7 +125,7 @@ export const NewFolder: React.FC<{
 				<div style={content}>
 					{parentName ? (
 						<div style={optionRow}>
-							<div style={label}>Parent</div>
+							<div style={label}>父级</div>
 							<div style={parentNameStyle}>{parentName}</div>
 						</div>
 					) : null}
@@ -139,7 +139,7 @@ export const NewFolder: React.FC<{
 									onChange={onNameChange}
 									type="text"
 									autoFocus
-									placeholder="Folder name"
+									placeholder="文件夹名称"
 									status="ok"
 									rightAlign
 								/>

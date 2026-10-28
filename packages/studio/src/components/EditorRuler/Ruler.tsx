@@ -180,7 +180,7 @@ const Ruler: React.FC<RulerProps> = ({
 			width={rulerWidth * pixelRatio}
 			height={rulerHeight * pixelRatio}
 			style={rulerStyle}
-			aria-label={`${isVerticalRuler ? 'Vertical' : 'Horizontal'} ruler`}
+			aria-label={`${isVerticalRuler ? '垂直' : '水平'} ruler`}
 			aria-readonly={!canCreateGuides}
 			{...{[PREVENT_CLEAR_SELECTION_ON_POINTER_DOWN_ATTR]: 'true'}}
 			onPointerDown={onPointerDown}

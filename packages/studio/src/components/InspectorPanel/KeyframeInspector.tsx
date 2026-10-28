@@ -608,7 +608,7 @@ export const KeyframeInspector: React.FC<{
 						onClick={onRemoveKeyframe}
 						renderIcon={(color) => <TrashIcon color={color} />}
 					>
-						Remove keyframe
+						移除关键帧
 					</InspectorQuickAction>
 				</InspectorQuickActionsSection>
 			</div>

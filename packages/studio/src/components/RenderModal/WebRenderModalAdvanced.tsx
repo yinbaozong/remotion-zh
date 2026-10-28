@@ -118,7 +118,7 @@ export const WebRenderModalAdvanced: React.FC<WebRenderModalAdvancedProps> = ({
 	const hardwareAccelerationOptions = useMemo((): ComboboxValue[] => {
 		return [
 			{
-				label: 'No Preference',
+				label: '无偏好',
 				onClick: () => setHardwareAcceleration('no-preference'),
 				leftItem:
 					hardwareAcceleration === 'no-preference' ? <Checkmark /> : null,
@@ -174,7 +174,7 @@ export const WebRenderModalAdvanced: React.FC<WebRenderModalAdvancedProps> = ({
 				value: 'disabled',
 			},
 			{
-				label: 'Low (100ms)',
+				label: '低（100ms）',
 				onClick: () => setPageResponsiveness('low'),
 				leftItem: selectedPageResponsiveness === 'low' ? <Checkmark /> : null,
 				id: 'low',
@@ -185,7 +185,7 @@ export const WebRenderModalAdvanced: React.FC<WebRenderModalAdvancedProps> = ({
 				value: 'low',
 			},
 			{
-				label: 'Medium (33ms)',
+				label: '中（33ms）',
 				onClick: () => setPageResponsiveness('medium'),
 				leftItem:
 					selectedPageResponsiveness === 'medium' ? <Checkmark /> : null,
@@ -197,7 +197,7 @@ export const WebRenderModalAdvanced: React.FC<WebRenderModalAdvancedProps> = ({
 				value: 'medium',
 			},
 			{
-				label: 'High (16ms)',
+				label: '高（16ms）',
 				onClick: () => setPageResponsiveness('high'),
 				leftItem: selectedPageResponsiveness === 'high' ? <Checkmark /> : null,
 				id: 'high',
@@ -312,7 +312,7 @@ export const WebRenderModalAdvanced: React.FC<WebRenderModalAdvancedProps> = ({
 				<>
 					<div style={optionRow}>
 						<div style={label}>
-							Page Responsiveness <Spacing x={0.5} />
+							页面响应 <Spacing x={0.5} />
 							<WebRendererCustomOptionExplainerBubble
 								apiName="pageResponsiveness"
 								description={<PageResponsivenessDescription />}
@@ -324,7 +324,7 @@ export const WebRenderModalAdvanced: React.FC<WebRenderModalAdvancedProps> = ({
 							<Combobox
 								values={pageResponsivenessOptions}
 								selectedId={selectedPageResponsiveness}
-								aria-label="Page Responsiveness"
+								aria-label="页面响应"
 							/>
 						</div>
 					</div>

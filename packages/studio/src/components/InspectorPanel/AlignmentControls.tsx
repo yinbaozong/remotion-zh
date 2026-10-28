@@ -319,38 +319,38 @@ const AlignmentControlsUnmemoized: React.FC<{
 	return (
 		<div style={container}>
 			<AlignmentButton
-				aria-label="Align left"
+				aria-label="左对齐"
 				onClick={() => handleAlign('left')}
 				Icon={AlignLeftIcon}
 				disabled={alignmentDisabled}
 			/>
 			<AlignmentButton
-				aria-label="Align center horizontally"
+				aria-label="水平居中"
 				onClick={() => handleAlign('center-h')}
 				Icon={AlignCenterHorizontalIcon}
 				disabled={alignmentDisabled}
 			/>
 			<AlignmentButton
-				aria-label="Align right"
+				aria-label="右对齐"
 				onClick={() => handleAlign('right')}
 				Icon={AlignRightIcon}
 				disabled={alignmentDisabled}
 			/>
 			<div style={verticalSpacer} />
 			<AlignmentButton
-				aria-label="Align top"
+				aria-label="顶部对齐"
 				onClick={() => handleAlign('top')}
 				Icon={AlignTopIcon}
 				disabled={alignmentDisabled}
 			/>
 			<AlignmentButton
-				aria-label="Align center vertically"
+				aria-label="垂直居中"
 				onClick={() => handleAlign('center-v')}
 				Icon={AlignCenterVerticalIcon}
 				disabled={alignmentDisabled}
 			/>
 			<AlignmentButton
-				aria-label="Align bottom"
+				aria-label="底部对齐"
 				onClick={() => handleAlign('bottom')}
 				Icon={AlignBottomIcon}
 				disabled={alignmentDisabled}

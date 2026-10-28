@@ -16,7 +16,7 @@ export const VideoMattingModalWithOptionalPackage: React.FC<{
 		installButtonText="Continue"
 		installMessage={null}
 		packageName={VIDEO_MATTING_PACKAGE}
-		title="Remove background"
+		title="移除背景"
 	>
 		<Suspense fallback={null}>
 			<LazyVideoMattingModal {...state} />

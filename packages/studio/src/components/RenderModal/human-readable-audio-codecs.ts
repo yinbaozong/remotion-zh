@@ -10,7 +10,7 @@ export const humanReadableAudioCodec = (audioCodec: AudioCodec) => {
 	}
 
 	if (audioCodec === 'pcm-16') {
-		return 'Lossless';
+		return '无损';
 	}
 
 	if (audioCodec === 'opus') {

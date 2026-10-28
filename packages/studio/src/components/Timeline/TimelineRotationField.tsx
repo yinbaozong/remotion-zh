@@ -252,7 +252,7 @@ export const TimelineRotationField: React.FC<{
 			formatter={formatter}
 			rightAlign={false}
 			allowStepMismatch
-			aria-label={isCssRotation ? 'Rotation Z' : 'Rotation angle'}
+			aria-label={isCssRotation ? 'Z 轴旋转' : 'Rotation angle'}
 		/>
 	);
 

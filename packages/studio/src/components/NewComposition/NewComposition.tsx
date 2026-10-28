@@ -310,13 +310,13 @@ export const NewCompositionFields: React.FC<{
 	return (
 		<>
 			<div style={optionRow}>
-				<div style={label}>Folder</div>
+				<div style={label}>文件夹</div>
 				<div style={rightRow}>
 					<Combobox
 						values={folderValues}
 						selectedId={selectedFolderId}
 						style={folderSelectStyle}
-						aria-label="Folder"
+						aria-label="文件夹"
 					/>
 				</div>
 			</div>

@@ -110,7 +110,7 @@ export const AskAiModal: React.FC = () => {
 				onOutsideClick={onQuit}
 				onEscape={onQuit}
 			>
-				<ModalHeader title="Ask AI" onClose={onQuit} />
+				<ModalHeader title="询问 AI" onClose={onQuit} />
 				<iframe
 					ref={iframe}
 					frameBorder={0}

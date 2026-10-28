@@ -10,7 +10,7 @@ export const humanReadableLogLevel = (logLevel: LogLevel) => {
 	}
 
 	if (logLevel === 'info') {
-		return 'Info';
+		return '信息';
 	}
 
 	if (logLevel === 'warn') {
@@ -18,7 +18,7 @@ export const humanReadableLogLevel = (logLevel: LogLevel) => {
 	}
 
 	if (logLevel === 'error') {
-		return 'Error';
+		return '错误';
 	}
 
 	throw new TypeError(`Got unexpected log level "${logLevel satisfies never}"`);

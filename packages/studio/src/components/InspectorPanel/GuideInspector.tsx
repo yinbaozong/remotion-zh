@@ -84,13 +84,13 @@ export const GuideInspector: React.FC<{
 			<CollapsibleInspectorSection
 				bodyPaddingBottom={8}
 				collapsible
-				label={`${guide.orientation === 'vertical' ? 'Vertical' : 'Horizontal'} guide`}
+				label={`${guide.orientation === 'vertical' ? '垂直' : '水平'} guide`}
 				sectionId="guide"
 			>
 				<div style={guideDetailsContainer}>
 					<InspectorDetailRow
 						label={
-							guide.orientation === 'vertical' ? 'X position' : 'Y position'
+							guide.orientation === 'vertical' ? 'X 位置' : 'Y 位置'
 						}
 					>
 						<InputDragger

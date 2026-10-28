@@ -65,10 +65,10 @@ export const RenderQueueCancelButton: React.FC<{
 			<InlineAction
 				aria-label={
 					job.type === 'caption'
-						? 'Cancel transcription'
+						? '取消转写'
 						: job.type === 'video-matting'
 							? 'outName' in job
-								? 'Cancel background removal'
+								? '取消背景移除'
 								: 'Cancel video matting'
 							: 'Cancel render'
 				}

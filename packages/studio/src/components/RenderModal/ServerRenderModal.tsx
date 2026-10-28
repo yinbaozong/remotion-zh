@@ -1494,7 +1494,7 @@ const RenderModal: React.FC<
 				>
 					{readOnlyStudio
 						? commandCopiedAt
-							? 'Copied command!'
+							? '已复制命令！'
 							: '复制命令'
 						: state.type === 'idle'
 							? `Render ${renderMode}`
@@ -1529,7 +1529,7 @@ const RenderModal: React.FC<
 								</div>
 							)}
 						>
-							Input Props
+							输入属性
 						</VerticalTab>
 					) : null}
 					{shownTabs.includes('picture') ? (
@@ -1543,7 +1543,7 @@ const RenderModal: React.FC<
 								</div>
 							)}
 						>
-							Picture
+							画面
 						</VerticalTab>
 					) : null}
 					{shownTabs.includes('audio') ? (
@@ -1599,7 +1599,7 @@ const RenderModal: React.FC<
 								</div>
 							)}
 						>
-							Environment
+							环境变量
 						</VerticalTab>
 					) : null}
 					{shownTabs.includes('advanced') ? (
@@ -1613,7 +1613,7 @@ const RenderModal: React.FC<
 								</div>
 							)}
 						>
-							Other
+							其他
 						</VerticalTab>
 					) : null}
 				</div>

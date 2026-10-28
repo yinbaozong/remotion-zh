@@ -335,7 +335,7 @@ const CompWhenItHasDimensions: React.FC<{
 				>
 					{mediaCompositionFileType === 'audio' ? (
 						<AudioFileIcon
-							aria-label="Audio asset"
+							aria-label="音频素材"
 							color={LIGHT_TEXT}
 							role="img"
 							style={{

@@ -122,7 +122,7 @@ export const RenderModalEncoding: React.FC<{
 	const qualityControlOptions = useMemo((): SegmentedControlItem[] => {
 		return qualityControlModes.map((option) => {
 			return {
-				label: option === 'crf' ? 'CRF' : 'Bitrate',
+				label: option === 'crf' ? 'CRF' : '码率',
 				onClick: () => setQualityControl(option),
 				key: option,
 				selected: qualityControlType === option,
@@ -263,7 +263,7 @@ export const RenderModalEncoding: React.FC<{
 			{qualityControlType === 'bitrate' && renderMode === 'video' ? (
 				<div style={optionRow}>
 					<div style={label}>
-						Target video bitrate
+						目标视频码率
 						<Spacing x={0.5} />
 						<OptionExplainerBubble id="videoBitrateOption" />
 					</div>
@@ -350,13 +350,13 @@ export const RenderModalEncoding: React.FC<{
 							<Combobox
 								values={pixelFormatOptions}
 								selectedId={pixelFormat}
-								aria-label="Pixel Format"
+								aria-label="像素格式"
 							/>
 						</div>
 					</div>
 					<div style={optionRow}>
 						<div style={label}>
-							Color space
+							色彩空间
 							<Spacing x={0.5} />
 							<OptionExplainerBubble id="colorSpaceOption" />
 						</div>
@@ -414,7 +414,7 @@ export const RenderModalEncoding: React.FC<{
 					) : null}
 					<div style={optionRow}>
 						<div style={label}>
-							Hardware acceleration
+							硬件加速
 							<Spacing x={0.5} />
 							<OptionExplainerBubble id="hardwareAccelerationOption" />
 						</div>
@@ -432,7 +432,7 @@ export const RenderModalEncoding: React.FC<{
 				<>
 					{renderMode === 'video' ? <RenderModalHr /> : null}
 					<div style={optionRow}>
-						<div style={label}>No parallel encoding</div>
+						<div style={label}>不并行编码</div>
 						<div style={rightRow}>
 							<Checkbox
 								checked={disallowParallelEncoding}

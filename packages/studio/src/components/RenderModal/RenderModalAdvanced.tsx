@@ -217,7 +217,7 @@ export const RenderModalAdvanced: React.FC<{
 	const openGlOptions = useMemo((): ComboboxValue[] => {
 		return extendedOpenGlOptions.map((option) => {
 			return {
-				label: option === 'default' ? 'Default' : option,
+				label: option === 'default' ? '默认' : option,
 				onClick: () => setOpenGlOption(option),
 				key: option,
 				leftItem: openGlOption === option ? <Checkmark /> : null,
@@ -412,7 +412,7 @@ export const RenderModalAdvanced: React.FC<{
 			)}
 			<RenderModalHr />
 			<div style={optionRow}>
-				<div style={label}>Disable web security</div>
+				<div style={label}>禁用网页安全策略</div>
 				<div style={rightRow}>
 					<Checkbox
 						checked={disableWebSecurity}
@@ -451,7 +451,7 @@ export const RenderModalAdvanced: React.FC<{
 					<Combobox
 						values={chromeModeOptions}
 						selectedId={chromeModeOption}
-						aria-label="Chrome mode"
+						aria-label="Chrome 模式"
 					/>
 				</div>
 			</div>
@@ -485,7 +485,7 @@ export const RenderModalAdvanced: React.FC<{
 			</div>
 			<div style={optionRow}>
 				<div style={label}>
-					Dark Mode
+					深色模式
 					<Spacing x={0.5} />
 					<OptionExplainerBubble id="darkModeOption" />
 				</div>

@@ -341,7 +341,7 @@ export const UpdatesSettings: React.FC = () => {
 						? 'This may take a few minutes. You can follow the progress in your terminal.'
 						: upgradeState === 'restarting'
 							? 'Studio is restarting with the new version.'
-							: 'Restart Studio to use the new version.'}
+							: '重启 Studio 以使用新版本。'}
 				</div>
 				{upgradeState === 'upgraded' || upgradeState === 'restarting' ? (
 					<div style={{marginTop: 12}}>
@@ -350,7 +350,7 @@ export const UpdatesSettings: React.FC = () => {
 							disabled={upgradeState === 'restarting'}
 						>
 							{upgradeState === 'restarting'
-								? 'Restarting...'
+								? '正在重启...'
 								: '重启 Studio'}
 						</ModalButton>
 					</div>
@@ -527,7 +527,7 @@ export const UpdatesSettings: React.FC = () => {
 										target="_blank"
 										href="https://github.com/remotion-dev/remotion/releases"
 									>
-										View all releases on GitHub
+										在 GitHub 查看全部版本
 									</a>
 									.
 								</div>
@@ -535,7 +535,7 @@ export const UpdatesSettings: React.FC = () => {
 						</>
 					)
 				) : (
-					<div style={text}>Loading release notes...</div>
+					<div style={text}>正在加载更新说明...</div>
 				)
 			) : null}
 		</div>

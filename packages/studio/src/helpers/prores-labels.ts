@@ -20,11 +20,11 @@ export const labelProResProfile = (
 	}
 
 	if (profile === 'light') {
-		return 'Light';
+		return '浅色';
 	}
 
 	if (profile === 'standard') {
-		return 'Standard';
+		return '标准';
 	}
 
 	throw new TypeError(`Unknown ProRes profile: ${profile}`);

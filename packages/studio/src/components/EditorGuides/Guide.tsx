@@ -233,7 +233,7 @@ const GuideComp: React.FC<{
 			{
 				id: '1',
 				keyHint: null,
-				label: 'Remove guide',
+				label: '移除参考线',
 				leftItem: null,
 				onClick: () => {
 					setGuidesList((prevState) => {

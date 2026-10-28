@@ -257,7 +257,7 @@ export const AssetSelectorModal: React.FC<{
 										: previewState.type === 'invalid'
 											? 'Enter an HTTP(S) URL.'
 											: previewState.type === 'loading'
-												? 'Loading preview…'
+												? '正在加载预览…'
 												: previewState.type === 'error'
 													? 'Preview unavailable. You can still replace the source.'
 													: `${previewState.width} × ${previewState.height}`}

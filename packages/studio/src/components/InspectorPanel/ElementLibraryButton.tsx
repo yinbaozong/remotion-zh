@@ -98,7 +98,7 @@ export const ElementLibraryButton: React.FC = () => {
 							/>
 						</span>
 						<span style={elementLibraryDropdownLabelStyle}>
-							Browse Elements
+							浏览元素
 						</span>
 						<span style={elementLibraryDropdownCaretStyle}>
 							<CaretDown color={color} />
@@ -151,7 +151,7 @@ export const ElementLibraryButton: React.FC = () => {
 						disabled: false,
 						id: 'manage-element-libraries',
 						keyHint: null,
-						label: 'Add element library...',
+						label: '添加元素库...',
 						leftItem: null,
 						onClick: openElementLibrarySettings,
 						quickSwitcherLabel: null,

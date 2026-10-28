@@ -217,7 +217,7 @@ export const FixComputedValueModal: React.FC<{
 						{downloadProject ? (
 							<div style={{marginTop: 16}}>
 								<ModalButton onClick={downloadProject}>
-									Download project
+									下载项目
 								</ModalButton>
 							</div>
 						) : null}

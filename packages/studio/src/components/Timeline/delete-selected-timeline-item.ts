@@ -31,7 +31,7 @@ const confirmDeletingDuplicatedSequences = (
 	if (duplicatedNodePathInfos.length === 1) {
 		const [nodePathInfo] = duplicatedNodePathInfos;
 		return confirm({
-			title: 'Delete sequence?',
+			title: '删除序列？',
 			message:
 				'This sequence is programmatically duplicated ' +
 				nodePathInfo.numberOfSequencesWithThisNodePath +
@@ -41,7 +41,7 @@ const confirmDeletingDuplicatedSequences = (
 	}
 
 	return confirm({
-		title: 'Delete sequences?',
+		title: '删除这些序列？',
 		message:
 			duplicatedNodePathInfos.length +
 			' selected sequences are programmatically duplicated in the code. Deleting removes all instances. Continue?',

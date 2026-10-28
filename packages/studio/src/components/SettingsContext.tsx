@@ -254,7 +254,7 @@ export const SettingsProvider: React.FC<{
 				setSkillsRevision((revision) => revision + 1);
 				const verb =
 					action === 'install'
-						? 'Installed'
+						? '已安装'
 						: action === 'upgrade'
 							? 'Upgraded'
 							: 'Removed';

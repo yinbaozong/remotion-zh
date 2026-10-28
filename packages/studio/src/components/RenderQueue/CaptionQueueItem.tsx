@@ -204,7 +204,7 @@ export const CaptionQueueItem: React.FC<{
 		}
 
 		if (job.status === 'cancelled') {
-			return 'Cancelled';
+			return '已取消';
 		}
 
 		if (job.status === 'failed') {

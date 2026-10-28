@@ -1093,7 +1093,7 @@ const TimelineSequenceItemInner: React.FC<{
 				],
 				setPropStatuses,
 				clientId: previewServerState.clientId,
-				undoLabel: newValue ? 'Hide sequence' : 'Show sequence',
+				undoLabel: newValue ? '隐藏序列' : '显示序列',
 				redoLabel: newValue ? 'Hide sequence again' : 'Show sequence again',
 			});
 		},
@@ -1530,8 +1530,8 @@ const TimelineSequenceItemInner: React.FC<{
 													id: 'crop',
 													keyHint: null,
 													label: isProgrammaticallyDuplicated
-														? 'Crop all'
-														: 'Crop',
+														? '全部裁剪'
+														: '裁剪',
 													leftItem: null,
 													disabled: false,
 													onClick: onCrop,
@@ -1549,7 +1549,7 @@ const TimelineSequenceItemInner: React.FC<{
 													keyHint: null,
 													label: isProgrammaticallyDuplicated
 														? 'Rotate all'
-														: 'Rotate',
+														: '旋转',
 													leftItem: null,
 													disabled: false,
 													onClick: onRotate,

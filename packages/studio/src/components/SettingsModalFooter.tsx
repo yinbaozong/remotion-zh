@@ -86,10 +86,10 @@ export const SettingsModalFooter: React.FC<{
 			<div style={footerRow}>
 				<div style={configFileHint}>
 					{restartRequired ? (
-						'Restart the server to apply changes'
+						'重启服务以应用更改'
 					) : (
 						<>
-							Changes save to
+							更改保存到
 							<Spacing x={0.5} />
 							<InspectorOpenInEditor
 								annotationName={null}
@@ -110,7 +110,7 @@ export const SettingsModalFooter: React.FC<{
 						size="compact"
 						aria-label="重启 Studio 以应用配置文件更改"
 					>
-						{restarting ? 'Restarting...' : '重启 Studio'}
+						{restarting ? '正在重启...' : '重启 Studio'}
 					</ModalButton>
 				) : showLicenseFaq || showAboutElements ? (
 					<InspectorQuickAction
@@ -123,7 +123,7 @@ export const SettingsModalFooter: React.FC<{
 								: 'Open Remotion Elements in a new tab'
 						}
 					>
-						{showLicenseFaq ? 'License FAQ' : 'About Elements'}
+						{showLicenseFaq ? 'License FAQ' : '关于元素'}
 						<svg
 							aria-hidden="true"
 							viewBox="0 0 16 16"

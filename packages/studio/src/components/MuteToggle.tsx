@@ -32,7 +32,7 @@ export const MuteToggle: React.FC<{
 	const onClick = useCallback(() => {
 		toggleMute(setMuted);
 	}, [setMuted]);
-	const accessibilityLabel = muted ? 'Unmute video' : 'Mute video';
+	const accessibilityLabel = muted ? '取消视频静音' : '视频静音';
 
 	return (
 		<ActionTooltip

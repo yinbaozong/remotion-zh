@@ -147,11 +147,11 @@ export const LicenseKeyDetailsDisplay: React.FC<{
 					<CheckCircleFilled style={{...iconStyle, fill: color}} />
 				)}
 				style={actionStyle}
-				aria-label="View license usage"
+				aria-label="查看许可证用量"
 			>
 				<span style={actionContent}>
 					<span style={actionText}>Belongs to {details.projectName}</span>
-					<span style={actionLabel}>View usage</span>
+					<span style={actionLabel}>查看用量</span>
 				</span>
 			</InspectorQuickAction>
 			<InspectorQuickAction
@@ -165,7 +165,7 @@ export const LicenseKeyDetailsDisplay: React.FC<{
 					)
 				}
 				style={actionStyle}
-				aria-label="Manage Company License"
+				aria-label="管理公司许可证"
 			>
 				<span style={actionContent}>
 					<span style={hasActiveLicense ? actionText : inactiveLicenseText}>
@@ -173,7 +173,7 @@ export const LicenseKeyDetailsDisplay: React.FC<{
 							? 'Active Company License'
 							: 'No active Company License'}
 					</span>
-					<span style={actionLabel}>Manage</span>
+					<span style={actionLabel}>管理</span>
 				</span>
 			</InspectorQuickAction>
 		</div>

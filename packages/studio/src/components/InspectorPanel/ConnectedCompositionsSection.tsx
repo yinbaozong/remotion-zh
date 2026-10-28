@@ -52,7 +52,7 @@ export const ConnectedCompositionsSection: React.FC<{
 		<CollapsibleInspectorSection
 			bodyPaddingBottom={0}
 			collapsible
-			label="Connected compositions"
+			label="关联作品"
 			sectionId="connected-compositions"
 		>
 			<div style={compositionListStyle}>

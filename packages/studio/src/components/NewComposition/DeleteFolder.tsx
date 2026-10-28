@@ -27,11 +27,11 @@ export const DeleteFolder: React.FC<{
 
 	return (
 		<DismissableModal>
-			<ModalHeader title={'Delete folder'} />
+			<ModalHeader title={'删除文件夹'} />
 			<form onSubmit={onSubmit}>
 				<div style={content}>
 					Do you want to delete the{' '}
-					<code style={inlineCodeSnippet}>Folder</code> with ID {'"'}
+					<code style={inlineCodeSnippet}>文件夹</code> with ID {'"'}
 					{folderId}
 					{'"'}?
 					<br />

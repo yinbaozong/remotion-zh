@@ -3,6 +3,7 @@
 // 默认汉化 node_modules/@remotion/studio/dist；也可指向 Remotion 源码的 packages/studio/src
 import fs from 'node:fs';
 import path from 'node:path';
+import {dict2} from './zh-dict2.mjs';
 
 export const dict = {
 	// 顶部菜单
@@ -112,6 +113,19 @@ const patterns = keys.map((k) => ({
 
 export function translate(code) {
 	let n = 0;
+	// 第二批：带双/单引号的整串精确匹配，只在界面相关位置替换
+	const uiProp = '(?:children|label|title|placeholder|text|description|defaultLabel|quickSwitcherLabel|header|tooltip|buttonLabel|message)';
+	for (const k of Object.keys(dict2).sort((a, b) => b.length - a.length)) {
+		const v = dict2[k], e = esc(k);
+		const safeLone = ['Jobs', 'Compositions', 'Assets', 'Actions', 'Metadata', 'Studio', 'Defaults', 'Shortcuts', 'Packages', 'Skills', 'Elements', 'Models', 'Apps', 'License', 'Updates', 'Fit'];
+		const multiWord = /[\s.…?!:]/.test(k) || safeLone.includes(k);
+		code = code.replace(new RegExp(`(${uiProp}\\s*[:=]\\s*\\{?\\s*)(["'])${e}\\2`, 'g'), (_m, pre, q) => (n++, `${pre}${q}${v}${q}`));
+		code = code.replace(new RegExp(`(\\?\\s*)(["'])${e}\\2(\\s*:)`, 'g'), (_m, a, q, b) => (n++, `${a}${q}${v}${q}${b}`));
+		code = code.replace(new RegExp(`(\\?\\s*(["'])[^"'\\n]*\\2\\s*:\\s*)(["'])${e}\\3`, 'g'), (_m, a, _q, q) => (n++, `${a}${q}${v}${q}`));
+		code = code.replace(new RegExp(`(return\\s+)(["'])${e}\\2;`, 'g'), (_m, a, q) => (n++, `${a}${q}${v}${q};`));
+		code = code.replace(new RegExp(`(>\\s*)${e}(\\s*<)`, 'g'), (_m, a, b) => (n++, `${a}${v}${b}`));
+		if (multiWord) code = code.replace(new RegExp(`^(\\s*)(["'])${e}\\2(,?)\\s*$`, 'gm'), (_m, a, q, c) => (n++, `${a}${q}${v}${q}${c}`));
+	}
 	for (const {k, quoted, ternary, elseBranch, jsx} of patterns) {
 		const v = dict[k];
 		code = code.replace(quoted, (_m, pre, _p, q) => (n++, `${pre}${q}${v}${q}`));

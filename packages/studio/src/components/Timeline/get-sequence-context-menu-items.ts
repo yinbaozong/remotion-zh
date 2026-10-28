@@ -152,7 +152,7 @@ export const getMultiSequenceContextMenuItems = ({
 			type: 'item',
 			id: 'duplicate-selected-sequences',
 			keyHint: null,
-			label: 'Duplicate selected',
+			label: '复制所选',
 			leftItem: null,
 			disabled: duplicateDisabled,
 			onClick: onDuplicateSelectedSequences,
@@ -164,7 +164,7 @@ export const getMultiSequenceContextMenuItems = ({
 			type: 'item',
 			id: 'split-selected-sequences',
 			keyHint: null,
-			label: 'Split',
+			label: '拆分',
 			leftItem: null,
 			disabled: splitDisabled,
 			onClick: onSplitSelectedSequences,
@@ -261,7 +261,7 @@ export const getSequenceContextMenuItems = (
 	const defaultOpenInName =
 		defaultOpenInTarget === 'editor' ? editorName : gitSourceName;
 	const copyImageLabel =
-		copyImageElement && sequence.type === 'image' ? 'Copy image' : 'Copy frame';
+		copyImageElement && sequence.type === 'image' ? '复制图片' : '复制当前帧';
 	const contextForAgents = formatContextForAgents({
 		location: originalLocation,
 		name: sequence.displayName || sequence.controls?.componentName || null,
@@ -430,7 +430,7 @@ export const getSequenceContextMenuItems = (
 					type: 'item' as const,
 					id: 'copy-svg',
 					keyHint: null,
-					label: 'Copy SVG',
+					label: '复制 SVG',
 					leftItem: null,
 					disabled: !sequence.refForOutline?.current,
 					onClick: () => {
@@ -492,7 +492,7 @@ export const getSequenceContextMenuItems = (
 					type: 'item' as const,
 					id: 'disable-interactivity',
 					keyHint: null,
-					label: 'Disable interactivity',
+					label: '禁用交互',
 					leftItem: null,
 					disabled: disableInteractivityDisabled,
 					onClick: onDisableSequenceInteractivity,
@@ -513,7 +513,7 @@ export const getSequenceContextMenuItems = (
 					type: 'item' as const,
 					id: 'delete-sequence',
 					keyHint: null,
-					label: isProgrammaticallyDuplicated ? 'Delete all' : '删除',
+					label: isProgrammaticallyDuplicated ? '全部删除' : '删除',
 					leftItem: null,
 					disabled: deleteDisabled,
 					onClick: onDeleteSequenceFromSource,

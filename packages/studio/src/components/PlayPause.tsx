@@ -299,7 +299,7 @@ const PlayPauseInner: React.FC<{
 					dismissOnClick
 				>
 					<ControlButton
-						aria-label="Go back 1 frame"
+						aria-label="后退 1 帧"
 						aria-keyshortcuts="ArrowLeft"
 						disabled={!videoConfig}
 						onClick={oneFrameBack}
@@ -310,13 +310,13 @@ const PlayPauseInner: React.FC<{
 			)}
 
 			<ActionTooltip
-				label={playing ? 'Pause' : 'Play'}
+				label={playing ? '暂停' : '播放'}
 				shortcut={playPauseShortcut}
 				delay={800}
 				dismissOnClick={false}
 			>
 				<ControlButton
-					aria-label={playing ? 'Pause' : 'Play'}
+					aria-label={playing ? '暂停' : '播放'}
 					aria-keyshortcuts={playPauseAriaShortcut || undefined}
 					onClick={playing ? pause : play}
 					disabled={!videoConfig}
@@ -346,7 +346,7 @@ const PlayPauseInner: React.FC<{
 					dismissOnClick
 				>
 					<ControlButton
-						aria-label="Go forward 1 frame"
+						aria-label="前进 1 帧"
 						aria-keyshortcuts="ArrowRight"
 						disabled={!videoConfig}
 						onClick={oneFrameForward}

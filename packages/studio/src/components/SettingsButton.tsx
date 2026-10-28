@@ -70,7 +70,7 @@ export const SettingsButton: React.FC<{
 	const label = hasBugfixesAvailable
 		? 'Bugfixes available'
 		: updateAvailable
-			? 'Update available'
+			? '有可用更新'
 			: '设置';
 
 	return (

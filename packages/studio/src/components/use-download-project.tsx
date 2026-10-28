@@ -32,7 +32,7 @@ export const useDownloadProject = () => {
 		}
 
 		const accepted = await confirm({
-			title: 'Download project',
+			title: '下载项目',
 			message: (
 				<>
 					<LicenseExplanation />

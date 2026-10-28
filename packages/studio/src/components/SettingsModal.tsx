@@ -208,7 +208,7 @@ export const SettingsModal: React.FC<{
 									</div>
 								)}
 							>
-								Defaults
+								默认值
 							</VerticalTab>
 						) : null}
 						<VerticalTab
@@ -221,7 +221,7 @@ export const SettingsModal: React.FC<{
 								</div>
 							)}
 						>
-							Shortcuts
+							快捷键
 						</VerticalTab>
 						{availableTabs.includes('packages') ? (
 							<VerticalTab
@@ -234,7 +234,7 @@ export const SettingsModal: React.FC<{
 									</div>
 								)}
 							>
-								Packages
+								依赖包
 							</VerticalTab>
 						) : null}
 						{availableTabs.includes('skills') ? (
@@ -248,7 +248,7 @@ export const SettingsModal: React.FC<{
 									</div>
 								)}
 							>
-								Skills
+								技能
 							</VerticalTab>
 						) : null}
 						{availableTabs.includes('studio') ? (
@@ -265,7 +265,7 @@ export const SettingsModal: React.FC<{
 									</div>
 								)}
 							>
-								Elements
+								元素
 							</VerticalTab>
 						) : null}
 						{availableTabs.includes('models') ? (
@@ -279,7 +279,7 @@ export const SettingsModal: React.FC<{
 									</div>
 								)}
 							>
-								Models
+								模型
 							</VerticalTab>
 						) : null}
 						{availableTabs.includes('apps') ? (
@@ -293,7 +293,7 @@ export const SettingsModal: React.FC<{
 									</div>
 								)}
 							>
-								Apps
+								应用
 							</VerticalTab>
 						) : null}
 						{availableTabs.includes('license') ? (
@@ -307,7 +307,7 @@ export const SettingsModal: React.FC<{
 									</div>
 								)}
 							>
-								License
+								许可证
 							</VerticalTab>
 						) : null}
 						{availableTabs.includes('updates') ? (
@@ -321,7 +321,7 @@ export const SettingsModal: React.FC<{
 									</div>
 								)}
 							>
-								Updates
+								更新
 							</VerticalTab>
 						) : null}
 					</div>

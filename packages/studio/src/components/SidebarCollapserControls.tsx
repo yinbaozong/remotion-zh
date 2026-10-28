@@ -277,7 +277,7 @@ export const SidebarCollapserControl: React.FC<{
 		sidebarCollapsedDuringDrag !== side;
 	const label =
 		side === 'left' && (mobileLayout || leftSidebarOverlayOpen)
-			? `${expanded ? '关闭' : 'Open'} compositions`
+			? `${expanded ? '关闭' : '打开'} compositions`
 			: `${expanded ? '折叠' : '展开'} ${side} sidebar`;
 
 	const colorStyle = useCallback((color: string): React.CSSProperties => {

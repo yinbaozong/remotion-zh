@@ -61,7 +61,7 @@ const outputOptions = [
 ] as const satisfies InterpolateOutputOption[];
 
 const labelForOutput = (value: InterpolateOutputOption) => {
-	return value === 'perceptual-scale' ? 'Perceptual scale' : 'Linear';
+	return value === 'perceptual-scale' ? 'Perceptual scale' : '线性';
 };
 
 const getOutputValues = (
@@ -200,20 +200,20 @@ export const KeyframeSettings: React.FC<{
 			<div style={keyframeSettingsContainer}>
 				{settings.clamping ? (
 					<>
-						<InspectorDetailRow label="Extrapolate left">
+						<InspectorDetailRow label="左侧外推">
 							<Combobox
 								values={leftValues}
 								selectedId={settings.clamping.left}
-								aria-label="Extrapolate left"
+								aria-label="左侧外推"
 								style={comboStyle}
 								size="small"
 							/>
 						</InspectorDetailRow>
-						<InspectorDetailRow label="Extrapolate right">
+						<InspectorDetailRow label="右侧外推">
 							<Combobox
 								values={rightValues}
 								selectedId={settings.clamping.right}
-								aria-label="Extrapolate right"
+								aria-label="右侧外推"
 								style={comboStyle}
 								size="small"
 							/>

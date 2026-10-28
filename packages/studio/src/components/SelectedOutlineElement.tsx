@@ -437,7 +437,7 @@ const SelectedOutlineElementUnmemoized: React.FC<
 								type: 'item' as const,
 								id: 'crop',
 								keyHint: null,
-								label: isProgrammaticallyDuplicated ? 'Crop all' : 'Crop',
+								label: isProgrammaticallyDuplicated ? '全部裁剪' : '裁剪',
 								leftItem: null,
 								disabled: !canCrop,
 								onClick: () => {
@@ -465,7 +465,7 @@ const SelectedOutlineElementUnmemoized: React.FC<
 								type: 'item' as const,
 								id: 'rotate',
 								keyHint: null,
-								label: isProgrammaticallyDuplicated ? 'Rotate all' : 'Rotate',
+								label: isProgrammaticallyDuplicated ? 'Rotate all' : '旋转',
 								leftItem: null,
 								disabled: !canRotate,
 								onClick: () => {

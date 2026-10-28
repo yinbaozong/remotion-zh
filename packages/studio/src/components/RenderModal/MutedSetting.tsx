@@ -20,7 +20,7 @@ export const MutedSetting: React.FC<{
 	return (
 		<div style={optionRow}>
 			<div style={label}>
-				Muted
+				已静音
 				<Spacing x={0.5} />
 				<OptionExplainerBubble id="mutedOption" />
 			</div>

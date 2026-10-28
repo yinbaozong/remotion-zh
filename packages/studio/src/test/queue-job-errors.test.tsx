@@ -121,7 +121,7 @@ test('opens and copies transcription and video matting errors', async () => {
 		name: 'Transcription failed',
 	});
 	const description = within(transcriptionDialog).getByText(
-		'The job failed because of the following error:',
+		'任务失败，错误如下：',
 	);
 	const descriptionStyle = getComputedStyle(description);
 	expect(descriptionStyle.color).toBe('#A6A7A9');

@@ -179,7 +179,7 @@ export const CaptionInspector: React.FC<{
 									style={readOnlyStatus}
 									aria-label={readOnlyTitle ?? undefined}
 								>
-									Read only
+									只读
 								</div>
 							) : null}
 						</div>

@@ -817,8 +817,8 @@ export const TimelineKeyframeControls: React.FC<{
 
 	const diamondColor = hasKeyframeAtCurrentFrame ? BLUE : LIGHT_TEXT;
 	const toggleKeyframeLabel = hasKeyframeAtCurrentFrame
-		? 'Remove keyframe'
-		: 'Add keyframe';
+		? '移除关键帧'
+		: '添加关键帧';
 
 	return (
 		<div

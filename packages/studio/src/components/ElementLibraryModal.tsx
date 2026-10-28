@@ -52,7 +52,7 @@ export const ElementLibraryModal: React.FC<{
 						dismissOnClick
 					>
 						<InlineAction
-							aria-label="Configure Element Libraries"
+							aria-label="配置元素库"
 							onClick={openElementSettings}
 							renderAction={renderGearIcon}
 							variant="modal-header"

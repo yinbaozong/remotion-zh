@@ -105,7 +105,7 @@ export const ExplorerQuickSwitcherTrigger: React.FC<{
 				) : null}
 			</button>
 			<ActionTooltip
-				label="More actions"
+				label="更多操作"
 				shortcut={null}
 				delay={800}
 				dismissOnClick

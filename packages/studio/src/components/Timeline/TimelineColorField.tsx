@@ -83,7 +83,7 @@ export const TimelineColorField: React.FC<{
 					aria-label={`Set ${field.description ?? field.key} to gray`}
 					onClick={() => onChangeComplete(DEFAULT_SET_COLOR)}
 				>
-					Set
+					设置
 				</button>
 			</span>
 		);

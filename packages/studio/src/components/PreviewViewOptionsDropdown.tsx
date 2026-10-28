@@ -55,7 +55,7 @@ export const PreviewViewOptionsDropdown: React.FC<{
 		items.push({
 			type: 'item',
 			id: 'rulers-and-guides',
-			label: showCompositionControls ? 'Rulers and Guides' : '标尺',
+			label: showCompositionControls ? '标尺与参考线' : '标尺',
 			value: 'rulers-and-guides',
 			onClick: () => {
 				setEditorShowRulers(() => !rulersOrGuidesAreVisible);
@@ -100,7 +100,7 @@ export const PreviewViewOptionsDropdown: React.FC<{
 
 	return (
 		<ActionTooltip
-			label="View options"
+			label="视图选项"
 			shortcut={null}
 			delay={800}
 			dismissOnClick
@@ -110,7 +110,7 @@ export const PreviewViewOptionsDropdown: React.FC<{
 				style={{width: 20}}
 				renderAction={(color) => <CaretDown color={color} />}
 				values={values}
-				aria-label="View options"
+				aria-label="视图选项"
 				unhoveredColor={WHITE_ALPHA_80}
 			/>
 		</ActionTooltip>

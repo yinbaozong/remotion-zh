@@ -188,7 +188,7 @@ const TimelineKeyframeEasingLineInteraction: React.FC<
 									);
 									return formatContextForAgents({
 										location,
-										name: `${field.type === 'effect' ? 'Effect property' : 'Property'} "${field.fieldKey}", easing from frame ${fromFrame} to ${toFrame}`,
+										name: `${field.type === 'effect' ? 'Effect property' : '属性'} "${field.fieldKey}", easing from frame ${fromFrame} to ${toFrame}`,
 										root: window.remotion_cwd,
 									});
 								},

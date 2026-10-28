@@ -68,7 +68,7 @@ export const Modals: React.FC<{
 			readonly url: string;
 		}) => {
 			const confirmed = await confirm({
-				title: 'Add Element Library',
+				title: '添加元素库',
 				message: (
 					<ElementLibraryAddConfirmation
 						origin={origin}

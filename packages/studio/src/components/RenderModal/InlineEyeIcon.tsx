@@ -33,7 +33,7 @@ export const InlineEyeButton: React.FC<{
 		},
 		[enabled],
 	);
-	const label = enabled ? 'Show value' : 'Hide value';
+	const label = enabled ? '显示值' : '隐藏值';
 
 	return (
 		<ActionTooltip label={label} shortcut={null} delay={800} dismissOnClick>

@@ -541,7 +541,7 @@ const useMenuStructureBase = ({
 					{
 						id: 'preview-size',
 						keyHint: null,
-						label: 'Preview size',
+						label: '预览尺寸',
 						onClick: () => undefined,
 						type: 'item' as const,
 						value: 'preview-size',
@@ -576,7 +576,7 @@ const useMenuStructureBase = ({
 					{
 						id: 'editor-zoom-gestures',
 						keyHint: null,
-						label: 'Zoom and Pan Gestures',
+						label: '缩放与平移手势',
 						onClick: () => {
 							closeMenu();
 							setEditorZoomGestures((c) => !c);
@@ -586,8 +586,8 @@ const useMenuStructureBase = ({
 						leftItem: editorZoomGestures ? <Checkmark /> : null,
 						subMenu: null,
 						quickSwitcherLabel: editorZoomGestures
-							? 'Disable Zoom and Pan Gestures'
-							: 'Enable Zoom and Pan Gestures',
+							? '禁用缩放与平移手势'
+							: '启用缩放与平移手势',
 					},
 					{
 						id: 'pixel-grid',
@@ -604,8 +604,8 @@ const useMenuStructureBase = ({
 						leftItem: editorShowPixelGrid ? <Checkmark /> : null,
 						subMenu: null,
 						quickSwitcherLabel: editorShowPixelGrid
-							? 'Hide Pixel Grid'
-							: 'Show Pixel Grid',
+							? '隐藏像素网格'
+							: '显示像素网格',
 					},
 					{
 						id: 'show-rulers',
@@ -620,7 +620,7 @@ const useMenuStructureBase = ({
 						leftItem: editorShowRulers ? <Checkmark /> : null,
 						subMenu: null,
 						quickSwitcherLabel: editorShowRulers
-							? 'Hide Rulers'
+							? '隐藏标尺'
 							: '显示标尺',
 					},
 					{
@@ -636,7 +636,7 @@ const useMenuStructureBase = ({
 						leftItem: editorShowGuides ? <Checkmark /> : null,
 						subMenu: null,
 						quickSwitcherLabel: editorShowGuides
-							? 'Hide Guides'
+							? '隐藏参考线'
 							: '显示参考线',
 					},
 					{
@@ -654,7 +654,7 @@ const useMenuStructureBase = ({
 						leftItem: editorSnapping ? <Checkmark /> : null,
 						subMenu: null,
 						quickSwitcherLabel: editorSnapping
-							? 'Disable Snapping'
+							? '关闭吸附'
 							: '启用吸附',
 					},
 					{
@@ -724,8 +724,8 @@ const useMenuStructureBase = ({
 						leftItem: checkerboard ? <Checkmark /> : null,
 						subMenu: null,
 						quickSwitcherLabel: checkerboard
-							? 'Disable Checkerboard Transparency'
-							: 'Enable Checkerboard Transparency',
+							? '禁用棋盘格透明背景'
+							: '启用棋盘格透明背景',
 					},
 					{
 						id: 'timeline-divider-3',
@@ -881,7 +881,7 @@ const useMenuStructureBase = ({
 						? {
 								id: 'ask-ai',
 								value: 'ask-ai',
-								label: 'Ask AI',
+								label: '询问 AI',
 								onClick: () => {
 									closeMenu();
 									askAiModalRef.current?.toggle();
@@ -892,7 +892,7 @@ const useMenuStructureBase = ({
 									: askAIShortcut || null,
 								subMenu: null,
 								type: 'item' as const,
-								quickSwitcherLabel: 'Ask AI',
+								quickSwitcherLabel: '询问 AI',
 							}
 						: null,
 					'EyeDropper' in window
@@ -950,7 +950,7 @@ const useMenuStructureBase = ({
 						value: 'shortcuts',
 						label: keyboardShortcutsDisabled
 							? 'Shortcuts (disabled)'
-							: 'Shortcuts',
+							: '快捷键',
 						onClick: () => {
 							closeMenu();
 
@@ -970,7 +970,7 @@ const useMenuStructureBase = ({
 						type: 'item' as const,
 						quickSwitcherLabel: keyboardShortcutsDisabled
 							? 'Show all Keyboard Shortcuts (disabled)'
-							: 'Show all Keyboard Shortcuts',
+							: '显示全部快捷键',
 					},
 					{
 						id: 'docs',

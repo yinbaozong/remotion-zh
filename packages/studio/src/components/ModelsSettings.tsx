@@ -137,7 +137,7 @@ const OptionalModelPackage: React.FC<{
 				)}
 			</div>
 			{installed ? (
-				<Suspense fallback={<p style={missingText}>Loading models…</p>}>
+				<Suspense fallback={<p style={missingText}>正在加载模型…</p>}>
 					{children}
 				</Suspense>
 			) : (

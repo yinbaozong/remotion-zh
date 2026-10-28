@@ -55,7 +55,7 @@ export const InstallablePackageComp: React.FC<{
 				</a>
 				<div style={descriptionStyle}>{description}</div>
 			</div>
-			<span style={status}>{isInstalled ? 'Installed' : 'Not installed'}</span>
+			<span style={status}>{isInstalled ? '已安装' : '未安装'}</span>
 		</div>
 	);
 };

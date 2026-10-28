@@ -318,7 +318,7 @@ export const TimelineAssetField: React.FC<TimelineAssetFieldProps> = ({
 			variant={null}
 			onClick={openAssetSelection}
 			disabled={window.remotion_isReadOnlyStudio}
-			aria-label="Change source"
+			aria-label="更换源文件"
 			renderAction={(color) => <PenIcon color={color} style={penIcon} />}
 		/>
 	);
@@ -356,7 +356,7 @@ export const TimelineAssetField: React.FC<TimelineAssetFieldProps> = ({
 		const onPreviewClick = opensSource
 			? inlineSourceAction.onClick
 			: openAssetSelection;
-		const previewLabel = `${opensSource ? 'Open' : 'Replace'} ${name}`;
+		const previewLabel = `${opensSource ? '打开' : '替换'} ${name}`;
 		const previewDisabled = opensSource
 			? inlineSourceAction.disabled
 			: window.remotion_isReadOnlyStudio;

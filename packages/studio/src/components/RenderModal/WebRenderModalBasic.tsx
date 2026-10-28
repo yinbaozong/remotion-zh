@@ -211,12 +211,12 @@ export const WebRenderModalBasic: React.FC<WebRenderModalBasicProps> = ({
 			) : (
 				<>
 					<div style={optionRow}>
-						<div style={label}>Container</div>
+						<div style={label}>容器</div>
 						<div style={rightRow}>
 							<Combobox
 								values={containerOptions}
 								selectedId={container}
-								aria-label="Container"
+								aria-label="容器"
 							/>
 						</div>
 					</div>
@@ -250,7 +250,7 @@ export const WebRenderModalBasic: React.FC<WebRenderModalBasicProps> = ({
 			)}
 			<RenderModalOutputName
 				ariaLabel={
-					window.remotion_isReadOnlyStudio ? 'Download name' : 'Output name'
+					window.remotion_isReadOnlyStudio ? 'Download name' : '输出名称'
 				}
 				existingOutputPath={null}
 				existence={false}
@@ -259,7 +259,7 @@ export const WebRenderModalBasic: React.FC<WebRenderModalBasicProps> = ({
 				onValueChange={onOutNameChange}
 				validationMessage={validationMessage}
 				label={
-					window.remotion_isReadOnlyStudio ? 'Download name' : 'Output name'
+					window.remotion_isReadOnlyStudio ? 'Download name' : '输出名称'
 				}
 			/>
 			<div style={optionRow}>

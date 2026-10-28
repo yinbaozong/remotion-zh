@@ -338,7 +338,7 @@ export const RenderingSettings: React.FC = () => {
 	const qualityModeValues = useMemo((): SegmentedControlItem[] => {
 		return (['crf', 'bitrate'] as const).map((value) => ({
 			key: value,
-			label: value === 'crf' ? 'CRF' : 'Bitrate',
+			label: value === 'crf' ? 'CRF' : '码率',
 			onClick: () => selectQualityMode(value),
 			selected: qualityMode === value,
 		}));
@@ -475,12 +475,12 @@ export const RenderingSettings: React.FC = () => {
 				</div>
 			</div>
 			<div style={optionRow}>
-				<div style={label}>Video frame format</div>
+				<div style={label}>视频帧格式</div>
 				<div style={rightRow}>
 					<Combobox
 						values={videoFormatValues}
 						selectedId={videoImageFormat ?? REMOTION_DEFAULT}
-						aria-label="Video frame format"
+						aria-label="视频帧格式"
 					/>
 				</div>
 			</div>
@@ -548,12 +548,12 @@ export const RenderingSettings: React.FC = () => {
 
 			<p style={sectionTitle}>音频</p>
 			<div style={optionRow}>
-				<div style={label}>Audio codec</div>
+				<div style={label}>音频编码器</div>
 				<div style={rightRow}>
 					<Combobox
 						values={audioCodecValues}
 						selectedId={audioCodec ?? REMOTION_DEFAULT}
-						aria-label="Audio codec"
+						aria-label="音频编码器"
 					/>
 				</div>
 			</div>

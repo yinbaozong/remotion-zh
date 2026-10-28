@@ -30,7 +30,7 @@ export const renderHumanReadableAudioCodec = (
 	codec: InputAudioTrack['codec'] | null,
 ) => {
 	if (codec === null) {
-		return 'Unknown';
+		return '未知';
 	}
 
 	return audioCodecLabels[codec] ?? codec;
@@ -50,7 +50,7 @@ export const renderHumanReadableVideoCodec = (
 	codec: InputVideoTrack['codec'] | null,
 ) => {
 	if (codec === null) {
-		return 'Unknown';
+		return '未知';
 	}
 
 	return videoCodecLabels[codec] ?? codec;

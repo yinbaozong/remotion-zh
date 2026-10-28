@@ -48,7 +48,7 @@ export const CompositionContextButton: React.FC<{
 		<div className={HOVER_GROUP_REVEAL_CLASS_NAME} style={revealStyle}>
 			<Spacing x={0.5} />
 			<ActionTooltip
-				label="More actions"
+				label="更多操作"
 				shortcut={null}
 				delay={800}
 				dismissOnClick
@@ -59,7 +59,7 @@ export const CompositionContextButton: React.FC<{
 					variant={null}
 					style={NO_HOVER_BACKGROUND_STYLE}
 					className={FOCUS_VISIBLE_ONLY_CLASS_NAME}
-					aria-label="More actions"
+					aria-label="更多操作"
 				/>
 			</ActionTooltip>
 		</div>

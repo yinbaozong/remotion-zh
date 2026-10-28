@@ -160,7 +160,7 @@ export const AgentPrompt: React.FC<{
 				{action ??
 					(hasCodingAgent ? (
 						<CodingAgentButton
-							label="Open in"
+							label="打开方式"
 							prompt={prompt}
 							size="compact"
 							style={null}
@@ -187,7 +187,7 @@ export const AgentPrompt: React.FC<{
 					onClick={() => copy(prompt, markPromptCopied)}
 					renderAction={renderPromptCopy}
 					style={copyAction}
-					aria-label="Copy prompt"
+					aria-label="复制提示词"
 					variant={null}
 				/>
 			</div>

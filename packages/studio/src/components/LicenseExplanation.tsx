@@ -94,7 +94,7 @@ export const LicenseExplanation: React.FC = () => {
 				<p style={description}>
 					If used in an organization with 4+ people, you need a{' '}
 					<a style={descriptionLink} href="https://remotion.pro/license">
-						Company License
+						公司许可证
 					</a>
 					.
 				</p>

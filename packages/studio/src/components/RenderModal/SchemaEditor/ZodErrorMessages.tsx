@@ -74,7 +74,7 @@ export const ZodErrorMessages: React.FC<{
 						<div key={error.path.join('.')} style={style}>
 							<WarningTriangle style={finalTriangleStyle} />
 							<Spacing x={size === 'compact' ? 0.75 : 1} />
-							{error.path.length === 0 ? 'Root' : error.path.join('.')}:{' '}
+							{error.path.length === 0 ? '根目录' : error.path.join('.')}:{' '}
 							{error.message}
 						</div>
 					);
@@ -90,7 +90,7 @@ export const ZodErrorMessages: React.FC<{
 					<div key={error.path.join('.')} style={style}>
 						-{' '}
 						<code style={code}>
-							{error.path.length === 0 ? 'Root' : error.path.join('.')}
+							{error.path.length === 0 ? '根目录' : error.path.join('.')}
 						</code>
 						: {error.message}
 					</div>

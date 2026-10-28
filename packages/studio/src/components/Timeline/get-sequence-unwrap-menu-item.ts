@@ -38,7 +38,7 @@ export const getSequenceUnwrapMenuItem = ({
 	return {
 		type: 'item',
 		id: 'unwrap-sequence',
-		label: 'Unwrap',
+		label: '解除包裹',
 		value: 'unwrap-sequence',
 		keyHint: null,
 		leftItem: null,

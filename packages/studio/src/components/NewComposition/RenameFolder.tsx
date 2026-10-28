@@ -85,7 +85,7 @@ export const RenameFolder: React.FC<{
 									onChange={onNameChange}
 									type="text"
 									autoFocus
-									placeholder="Folder name"
+									placeholder="文件夹名称"
 									status="ok"
 									rightAlign
 								/>

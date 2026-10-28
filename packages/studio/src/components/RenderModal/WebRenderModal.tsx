@@ -678,7 +678,7 @@ const WebRenderModal: React.FC<WebRenderModalProps> = ({
 							</div>
 						)}
 					>
-						Input Props
+						输入属性
 					</VerticalTab>
 					{renderMode !== 'audio' ? (
 						<VerticalTab
@@ -691,7 +691,7 @@ const WebRenderModal: React.FC<WebRenderModalProps> = ({
 								</div>
 							)}
 						>
-							Picture
+							画面
 						</VerticalTab>
 					) : null}
 					{renderMode === 'video' || renderMode === 'audio' ? (
@@ -718,7 +718,7 @@ const WebRenderModal: React.FC<WebRenderModalProps> = ({
 							</div>
 						)}
 					>
-						Other
+						其他
 					</VerticalTab>
 					{canEditConfig ? (
 						<VerticalTab
@@ -738,7 +738,7 @@ const WebRenderModal: React.FC<WebRenderModalProps> = ({
 								</div>
 							)}
 						>
-							License
+							许可证
 						</VerticalTab>
 					) : null}
 				</div>

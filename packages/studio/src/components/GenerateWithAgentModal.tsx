@@ -37,10 +37,10 @@ export const GenerateWithAgentModal: React.FC<{readonly state: State}> = ({
 
 	return (
 		<DismissableModal panelStyle={panelStyle}>
-			<ModalHeader title="Generate with agent" />
+			<ModalHeader title="用 AI 生成" />
 			<div style={container}>
 				<div style={text}>
-					Ask a coding agent to generate content in this composition.
+					让编程助手为此作品生成内容。
 				</div>
 				<AgentPrompt
 					action={null}

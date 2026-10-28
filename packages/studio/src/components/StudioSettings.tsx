@@ -299,9 +299,9 @@ export const StudioSettings: React.FC = () => {
 			<p style={dividerLabel}>界面</p>
 			<div style={optionRow}>
 				<div style={label}>
-					Interactivity enabled
+					启用交互
 					<InfoBubble
-						aria-label="About interactivity"
+						aria-label="关于交互"
 						horizontalAlignment="right"
 					>
 						<div
@@ -317,7 +317,7 @@ export const StudioSettings: React.FC = () => {
 						</div>
 					</InfoBubble>
 				</div>
-				<label style={rightRow} aria-label="Interactivity enabled">
+				<label style={rightRow} aria-label="启用交互">
 					<Checkbox
 						checked={settings.interactivityEnabled !== false}
 						name="Interactivity enabled"
@@ -335,7 +335,7 @@ export const StudioSettings: React.FC = () => {
 				<div style={label}>
 					作品标签页
 					<InfoBubble
-						aria-label="About composition tabs"
+						aria-label="关于作品标签页"
 						horizontalAlignment="right"
 					>
 						<div
@@ -346,7 +346,7 @@ export const StudioSettings: React.FC = () => {
 								lineHeight: 1.5,
 							}}
 						>
-							Show a tab interface above the canvas.
+							在画布上方显示标签页。
 						</div>
 					</InfoBubble>
 				</div>
@@ -370,7 +370,7 @@ export const StudioSettings: React.FC = () => {
 				<div style={label}>
 					图层帧计数器
 					<InfoBubble
-						aria-label="About layer frame counters"
+						aria-label="关于图层帧计数器"
 						horizontalAlignment="right"
 					>
 						<div
@@ -381,7 +381,7 @@ export const StudioSettings: React.FC = () => {
 								lineHeight: 1.5,
 							}}
 						>
-							Shows the internal time of a clip as a small label.
+							以小标签显示片段内部时间。
 						</div>
 					</InfoBubble>
 				</div>
@@ -403,7 +403,7 @@ export const StudioSettings: React.FC = () => {
 				<div style={label}>
 					显示预挂载
 					<InfoBubble
-						aria-label="About premounting"
+						aria-label="关于预挂载"
 						horizontalAlignment="right"
 					>
 						<div
@@ -426,7 +426,7 @@ export const StudioSettings: React.FC = () => {
 									textDecoration: 'none',
 								}}
 							>
-								Premounting
+								预挂载
 							</a>
 						</div>
 					</InfoBubble>
@@ -447,9 +447,9 @@ export const StudioSettings: React.FC = () => {
 			</div>
 			<div style={optionRow}>
 				<div style={label}>
-					Visualize unmounted components
+					显示未挂载组件
 					<InfoBubble
-						aria-label="About visualizing unmounted components"
+						aria-label="关于显示未挂载组件"
 						horizontalAlignment="right"
 					>
 						<div
@@ -473,14 +473,14 @@ export const StudioSettings: React.FC = () => {
 									textDecoration: 'none',
 								}}
 							>
-								Showing unmounted components
+								正在显示未挂载组件
 							</a>
 						</div>
 					</InfoBubble>
 				</div>
 				<div style={{...rightRow, gap: 6}}>
 					<RemotionInput
-						aria-label="Visualize unmounted components"
+						aria-label="显示未挂载组件"
 						type="text"
 						style={{width: 140}}
 						onChange={(event) => {
@@ -558,9 +558,9 @@ export const StudioSettings: React.FC = () => {
 			<p style={sectionTitle}>播放</p>
 			<div style={optionRow}>
 				<div style={label}>
-					Preserve pitch
+					保持音调
 					<InfoBubble
-						aria-label="About preserving pitch"
+						aria-label="关于保持音调"
 						horizontalAlignment="right"
 					>
 						<div
@@ -576,7 +576,7 @@ export const StudioSettings: React.FC = () => {
 						</div>
 					</InfoBubble>
 				</div>
-				<label style={rightRow} aria-label="Preserve pitch">
+				<label style={rightRow} aria-label="保持音调">
 					<Checkbox
 						checked={settings.preservePitchOnPlayback !== false}
 						name="Preserve pitch"
@@ -607,7 +607,7 @@ export const StudioSettings: React.FC = () => {
 								textDecoration: 'none',
 							}}
 						>
-							Premounting
+							预挂载
 						</a>
 					</>
 				}
@@ -627,7 +627,7 @@ export const StudioSettings: React.FC = () => {
 				value={settings.defaultPremountInSeconds}
 			/>
 			<ConfigSelect
-				defaultLabel="Playback"
+				defaultLabel="播放"
 				description={
 					<>
 						Remotion runs an{' '}
@@ -656,8 +656,8 @@ export const StudioSettings: React.FC = () => {
 					changeSetting('audioLatencyHint', 'setAudioLatencyHint', value)
 				}
 				options={[
-					{label: 'Interactive', value: 'interactive'},
-					{label: 'Balanced', value: 'balanced'},
+					{label: '交互', value: 'interactive'},
+					{label: '均衡', value: 'balanced'},
 					{label: '播放', value: 'playback'},
 				]}
 				value={settings.audioLatencyHint}
@@ -681,7 +681,7 @@ export const StudioSettings: React.FC = () => {
 				value={settings.numberOfSharedAudioTags}
 			/>
 
-			<p style={sectionTitle}>Development</p>
+			<p style={sectionTitle}>开发</p>
 			<ConfigSelect
 				defaultLabel="Webpack"
 				description="Chooses the tool that compiles your project for Studio and rendering. Webpack is the default; Rspack is an alternative. Changing this setting restarts Studio."
@@ -697,7 +697,7 @@ export const StudioSettings: React.FC = () => {
 				<div style={label}>
 					Cross-site isolation
 					<InfoBubble
-						aria-label="About cross-site isolation"
+						aria-label="关于跨站隔离"
 						horizontalAlignment="right"
 					>
 						<div
@@ -748,7 +748,7 @@ export const StudioSettings: React.FC = () => {
 				</label>
 			</div>
 			<ConfigSelect<LogLevel>
-				defaultLabel="Info"
+				defaultLabel="信息"
 				description="Controls how much detail Remotion writes to the console. Use Info for normal output, Warn or Error for fewer messages, and Verbose or Trace for debugging."
 				name="Log level"
 				onChange={(value) => changeSetting('logLevel', 'setLogLevel', value)}

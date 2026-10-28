@@ -46,7 +46,7 @@ export const humanReadableCodec = (codec: Codec) => {
 	}
 
 	if (codec === 'wav') {
-		return 'Waveform';
+		return '波形';
 	}
 
 	throw new TypeError(`Got unexpected codec "${codec}"`);

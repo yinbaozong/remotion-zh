@@ -237,7 +237,7 @@ export const MultiSequenceInspector: React.FC<{
 			<CollapsibleInspectorSection
 				bodyPaddingBottom={8}
 				collapsible
-				label="Actions"
+				label="操作"
 				sectionId="multi-sequence-actions"
 			>
 				<InspectorQuickActionsSection>
@@ -250,7 +250,7 @@ export const MultiSequenceInspector: React.FC<{
 							<SplitIcon style={largeInspectorActionIconStyle} color={color} />
 						)}
 					>
-						Split selected
+						拆分所选
 					</InspectorQuickAction>
 					<SequencePrecomposeAction
 						targets={precomposeTargets}

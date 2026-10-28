@@ -154,7 +154,7 @@ export const getCurrentAssetMediaSections = (mediaMetadata: MediaMetadata) => {
 		if (mediaMetadata.isHdr !== null) {
 			video.push({
 				label: 'HDR',
-				value: mediaMetadata.isHdr ? 'Yes' : 'No',
+				value: mediaMetadata.isHdr ? '是' : '否',
 			});
 		}
 	}
@@ -171,7 +171,7 @@ export const getCurrentAssetMediaSections = (mediaMetadata: MediaMetadata) => {
 
 		if (mediaMetadata.sampleRate !== null) {
 			audio.push({
-				label: 'Sample rate',
+				label: '采样率',
 				value: `${mediaMetadata.sampleRate} Hz`,
 			});
 		}
@@ -434,7 +434,7 @@ export const AssetInfo: React.FC<{
 
 	const container = mediaMetadata?.format ?? imageMetadata?.format ?? null;
 	if (container !== null) {
-		fileDetails.push({label: 'Container', value: container});
+		fileDetails.push({label: '容器', value: container});
 	}
 
 	if (sizeInBytes !== null) {
@@ -522,7 +522,7 @@ export const AssetInfo: React.FC<{
 								</InspectorDetailRow>
 							))}
 							{src ? (
-								<InspectorDetailRow label="Average volume">
+								<InspectorDetailRow label="平均音量">
 									<span style={assetMetadataValueStyle}>
 										<AssetAudioVolume
 											key={volumeMetadata?.src ?? src}
@@ -546,7 +546,7 @@ export const AssetInfo: React.FC<{
 			<CollapsibleInspectorSection
 				bodyPaddingBottom={8}
 				collapsible
-				label="Actions"
+				label="操作"
 				sectionId="asset-actions"
 			>
 				<InspectorQuickActionsSection>
@@ -589,7 +589,7 @@ export const AssetInfo: React.FC<{
 								<TranscriptionIcon color={color} style={quickActionIconStyle} />
 							)}
 						>
-							Transcribe
+							转写
 						</InspectorQuickAction>
 					) : null}
 					{fileType === 'video' ? (
@@ -603,7 +603,7 @@ export const AssetInfo: React.FC<{
 								/>
 							)}
 						>
-							Remove background
+							移除背景
 						</InspectorQuickAction>
 					) : null}
 					{src ? (
@@ -617,7 +617,7 @@ export const AssetInfo: React.FC<{
 								/>
 							)}
 						>
-							Convert
+							转换
 							<svg
 								aria-hidden="true"
 								viewBox="0 0 16 16"

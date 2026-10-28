@@ -83,7 +83,7 @@ export const ClickableFileName = ({
 				{originalFileName.type === 'loaded'
 					? getOriginalSourceAttribution(originalFileName.originalFileName)
 					: originalFileName.type === 'loading'
-						? 'Loading...'
+						? '加载中...'
 						: 'Error loading'}
 			</span>
 		</div>

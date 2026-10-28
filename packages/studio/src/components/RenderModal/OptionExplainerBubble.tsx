@@ -17,7 +17,7 @@ export const OptionExplainerBubble: React.FC<{
 	const option = BrowserSafeApis.options[id] as AnyRemotionOption<unknown>;
 
 	return (
-		<InfoBubble aria-label="Learn more about this option">
+		<InfoBubble aria-label="了解此选项">
 			<OptionExplainer
 				extraInfoRows={extraInfoRows}
 				option={option}
@@ -56,7 +56,7 @@ export const WebRendererCustomOptionExplainerBubble: React.FC<{
 	};
 
 	return (
-		<InfoBubble aria-label="Learn more about this option">
+		<InfoBubble aria-label="了解此选项">
 			<OptionExplainer
 				extraInfoRows={[{label: 'API option', value: apiName}]}
 				option={option}

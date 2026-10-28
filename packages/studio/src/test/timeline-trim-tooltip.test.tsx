@@ -51,8 +51,8 @@ test('trim feedback starts centered, grows left, and hides natural boundary reas
 
 		const hidden: TimelineTrimLimitReason[] = [
 			'Minimum duration',
-			'Source start',
-			'Source end',
+			'源起点',
+			'源终点',
 			'Parent edge',
 			'Composition edge',
 			'Adjacent clip',

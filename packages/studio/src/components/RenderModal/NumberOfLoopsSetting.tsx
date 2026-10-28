@@ -33,7 +33,7 @@ export const NumberOfLoopsSetting: React.FC<{
 
 	return (
 		<div style={optionRow}>
-			<div style={label}>Number of loops</div>
+			<div style={label}>循环次数</div>
 			<div style={rightRow}>
 				<RightAlignInput>
 					<InputDragger

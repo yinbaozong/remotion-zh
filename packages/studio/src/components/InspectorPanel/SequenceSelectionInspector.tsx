@@ -97,7 +97,7 @@ const SplitSequenceQuickAction: React.FC<{
 		}).catch(() => undefined);
 	}, [canSplit, eligibility, timelinePosition, track]);
 	const disabledReason = !isStudioInteractivityEnabled()
-		? 'Studio is read-only'
+		? 'Studio 为只读模式'
 		: sequencePropStatuses === undefined
 			? 'Waiting for sequence prop status'
 			: eligibility.canSplit
@@ -114,7 +114,7 @@ const SplitSequenceQuickAction: React.FC<{
 				<SplitIcon style={largeInspectorActionIconStyle} color={color} />
 			)}
 		>
-			Split
+			拆分
 		</InspectorQuickAction>
 	);
 };
@@ -165,12 +165,12 @@ const SequenceSourceQuickActions: React.FC<{
 			: null;
 	const mediaMetadata = useMediaMetadata(mediaSequence?.src ?? null);
 	const transcriptionDisabledReason = sourceActionsDisabled
-		? 'Studio is read-only'
+		? 'Studio 为只读模式'
 		: selection.nodePathInfo.numberOfSequencesWithThisNodePath > 1
 			? 'Programmatically duplicated media cannot be transcribed from source'
 			: undefined;
 	const videoMattingDisabledReason = sourceActionsDisabled
-		? 'Studio is read-only'
+		? 'Studio 为只读模式'
 		: selection.nodePathInfo.numberOfSequencesWithThisNodePath > 1
 			? 'Programmatically duplicated videos cannot have their background removed from source'
 			: undefined;
@@ -248,7 +248,7 @@ const SequenceSourceQuickActions: React.FC<{
 		deleteTimelineItems([selection]);
 	}, [deleteTimelineItems, selection, sourceActionsDisabled]);
 	const splitVideoFromAudioDisabledReason = sourceActionsDisabled
-		? 'Studio is read-only'
+		? 'Studio 为只读模式'
 		: mediaMetadata?.hasAudioTrack !== true
 			? mediaMetadata?.hasAudioTrack === false
 				? 'This video has no audio track'
@@ -310,7 +310,7 @@ const SequenceSourceQuickActions: React.FC<{
 						/>
 					)}
 				>
-					Remove background
+					移除背景
 				</InspectorQuickAction>
 			) : null}
 			{track.sequence.type === 'video' ? (
@@ -345,7 +345,7 @@ const SequenceSourceQuickActions: React.FC<{
 						/>
 					)}
 				>
-					Generate captions
+					生成字幕
 				</InspectorQuickAction>
 			) : null}
 			<InspectorQuickAction
@@ -488,7 +488,7 @@ const SequenceExpandedInspector: React.FC<{
 					<CollapsibleInspectorSection
 						bodyPaddingBottom={8}
 						collapsible
-						label="Actions"
+						label="操作"
 						sectionId="sequence-actions"
 					>
 						<InspectorQuickActionsSection>
@@ -510,7 +510,7 @@ const SequenceExpandedInspector: React.FC<{
 					<CollapsibleInspectorSection
 						bodyPaddingBottom={8}
 						collapsible
-						label="Actions"
+						label="操作"
 						sectionId="sequence-actions"
 					>
 						<InspectorQuickActionsSection>

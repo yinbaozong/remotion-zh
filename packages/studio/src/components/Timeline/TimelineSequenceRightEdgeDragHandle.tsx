@@ -1488,13 +1488,13 @@ export const getTimelineSequenceLeftEdgeDragTargets = ({
 						minimumTrimBefore > 0
 							? (timingLimits.keyframes.minimumReason ?? 'Keyframe constraint')
 							: hiddenPrefix > 0 && !canShiftFrom
-								? 'Computed value'
+								? '计算值'
 								: maximumFromShift < hiddenPrefix
 									? 'Keyframe constraint'
-									: 'Source start',
+									: '源起点',
 					maximumReason:
 						maximumSourceOffsetFromEnd <= timingLimits.maximumTrimBefore
-							? 'Source end'
+							? '源终点'
 							: timingLimits.limitReasons.maximumTrimBefore,
 					adjustDuration,
 					requiresExplicitDuration:
@@ -1811,7 +1811,7 @@ export const getTimelineSequenceRollingEditTargets = ({
 							mediaLimits
 								? mediaLimits.maximumDuration * leftTrack.keyframePlaybackRate
 								: Infinity,
-							'Source end',
+							'源终点',
 						],
 						[naturalDuration ?? Infinity, 'Content end'],
 					],
@@ -2605,7 +2605,7 @@ const TimelineSequenceLeftEdgeDragHandleInner: React.FC<{
 												],
 											]) ??
 											(nextValues.trimBefore === 0
-												? 'Source start'
+												? '源起点'
 												: getTimelineTrimLimitReason(nextValues.from, [
 														[
 															limits?.minimumFrom ?? NaN,

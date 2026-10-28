@@ -115,7 +115,7 @@ export const ExplorerPanel: React.FC<{
 							selected={panel === 'compositions'}
 							onClick={onCompositionsSelected}
 						>
-							Compositions
+							作品
 						</Tab>
 						<Tab
 							selected={panel === 'assets'}
@@ -123,7 +123,7 @@ export const ExplorerPanel: React.FC<{
 							onDragEnter={onAssetDragEnter}
 							onDragLeave={onAssetDragLeave}
 						>
-							Assets
+							素材
 						</Tab>
 					</Tabs>
 				</div>

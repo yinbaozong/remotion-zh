@@ -347,7 +347,7 @@ export const getTimelineSequenceTimingLimits = ({
 					[keyframeMaximumDuration, keyframeLimits.maximumReason],
 					[spatialMaximumDuration, spatialLimitReason],
 					[minimumDuration, minimumDurationReason],
-					[maximumDuration, isMedia ? 'Source end' : 'Content end'],
+					[maximumDuration, isMedia ? '源终点' : 'Content end'],
 				],
 			),
 			minimumFrom: minimumFromReason,
@@ -375,7 +375,7 @@ export const getTimelineSequenceTimingLimits = ({
 					maximumTrimBefore,
 					isMedia && !Number.isFinite(sourceEnd)
 						? 'Unknown media duration'
-						: 'Source end',
+						: '源终点',
 				],
 			]),
 		},

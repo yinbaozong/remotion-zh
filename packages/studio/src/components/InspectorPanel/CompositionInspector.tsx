@@ -95,7 +95,7 @@ const CompositionActions: React.FC = () => {
 		<CollapsibleInspectorSection
 			bodyPaddingBottom={8}
 			collapsible
-			label="Actions"
+			label="操作"
 			sectionId="composition-actions"
 		>
 			<InspectorQuickActionsSection>
@@ -107,7 +107,7 @@ const CompositionActions: React.FC = () => {
 							<SolidIcon color={color} style={inspectorActionIconStyle} />
 						)}
 					>
-						Add Solid
+						添加纯色层
 					</InspectorQuickAction>
 				) : null}
 				{canShowInsertText ? (
@@ -118,7 +118,7 @@ const CompositionActions: React.FC = () => {
 							<FontFileIcon color={color} style={inspectorActionIconStyle} />
 						)}
 					>
-						Add text
+						添加文字
 					</InspectorQuickAction>
 				) : null}
 				{canShowInsertAsset ? (
@@ -129,7 +129,7 @@ const CompositionActions: React.FC = () => {
 							<PicIcon color={color} style={inspectorActionIconStyle} />
 						)}
 					>
-						Add asset...
+						添加素材...
 					</InspectorQuickAction>
 				) : null}
 				{canShowInsertComposition ? (
@@ -140,7 +140,7 @@ const CompositionActions: React.FC = () => {
 							<FilmIcon color={color} style={inspectorActionIconStyle} />
 						)}
 					>
-						Add composition...
+						添加作品...
 					</InspectorQuickAction>
 				) : null}
 				{canShowGenerateWithAgent ? (
@@ -155,7 +155,7 @@ const CompositionActions: React.FC = () => {
 							/>
 						)}
 					>
-						Generate with agent...
+						用 AI 生成...
 					</InspectorQuickAction>
 				) : null}
 				{canShowInsertAsset ? <ElementLibraryButton /> : null}
@@ -170,7 +170,7 @@ const CompositionActions: React.FC = () => {
 							/>
 						)}
 					>
-						Download project
+						下载项目
 					</InspectorQuickAction>
 				) : null}
 			</InspectorQuickActionsSection>
@@ -293,7 +293,7 @@ const CompositionDefaultPropsSection: React.FC<{
 						) : null
 					}
 					expanded={expanded}
-					label={readOnlyStudio ? '属性' : 'Default Props'}
+					label={readOnlyStudio ? '属性' : '默认属性'}
 					onToggle={() => setExpanded(!expanded)}
 				/>
 			</InspectorSectionHeader>
@@ -341,7 +341,7 @@ const CompositionVisualControlsSection: React.FC<{
 		<CollapsibleInspectorSection
 			bodyPaddingBottom={8}
 			collapsible
-			label="Visual Controls"
+			label="可视化控件"
 			sectionId="composition-visual-controls"
 		>
 			<VisualControlsContent />

@@ -121,10 +121,10 @@ export const OptionsPanel: React.FC<{
 	const inspectorTitle = useMemo(() => {
 		if (selectedItems.length === 0) {
 			if (canvasContent?.type === 'asset') {
-				return 'Asset';
+				return '素材';
 			}
 
-			return composition === null ? 'Selection' : '作品';
+			return composition === null ? '选区' : '作品';
 		}
 
 		const selection =
@@ -133,21 +133,21 @@ export const OptionsPanel: React.FC<{
 				: getSameSequenceInspectorSelection(selectedItems);
 		if (selection === null) {
 			return selectedItems.every((item) => item.type === 'sequence')
-				? 'Sequences'
-				: 'Selection';
+				? '序列'
+				: '选区';
 		}
 
 		if (isSequenceSectionSelection(selection)) {
-			return 'Sequence';
+			return '序列';
 		}
 
 		switch (selection.type) {
 			case 'keyframe':
-				return 'Keyframe';
+				return '关键帧';
 			case 'easing':
-				return 'Easing';
+				return '缓动';
 			case 'guide':
-				return 'Guide';
+				return '参考线';
 			default:
 				throw new Error(
 					`Unexpected inspector selection: ${selection satisfies never}`,

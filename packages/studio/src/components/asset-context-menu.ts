@@ -102,7 +102,7 @@ export const getAssetContextMenuItems = ({
 		{
 			id: 'copy-asset-file-name',
 			keyHint: null,
-			label: 'Copy file name',
+			label: '复制文件名',
 			leftItem: null,
 			onClick: copyFileName,
 			quickSwitcherLabel: '复制素材文件名',
@@ -125,7 +125,7 @@ export const getAssetContextMenuItems = ({
 			? {
 					id: 'copy-asset-absolute-path',
 					keyHint: null,
-					label: 'Copy absolute path',
+					label: '复制绝对路径',
 					leftItem: null,
 					onClick: copyAbsolutePath,
 					quickSwitcherLabel: '复制素材绝对路径',

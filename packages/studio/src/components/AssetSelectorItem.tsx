@@ -174,7 +174,7 @@ export const getAssetFolderContextMenuItems = ({
 		{
 			id: 'copy-asset-folder-path',
 			keyHint: null,
-			label: 'Copy folder path',
+			label: '复制文件夹路径',
 			leftItem: null,
 			onClick: copyFolderPath,
 			quickSwitcherLabel: 'Copy asset folder path',
@@ -186,7 +186,7 @@ export const getAssetFolderContextMenuItems = ({
 			? {
 					id: 'copy-asset-folder-absolute-path',
 					keyHint: null,
-					label: 'Copy absolute path',
+					label: '复制绝对路径',
 					leftItem: null,
 					onClick: copyAbsolutePath,
 					quickSwitcherLabel: 'Copy asset folder absolute path',
@@ -397,14 +397,14 @@ const AssetFolderItem: React.FC<{
 						>
 							<Spacing x={0.5} />
 							<ActionTooltip
-								label="More actions"
+								label="更多操作"
 								shortcut={null}
 								delay={800}
 								dismissOnClick
 							>
 								<InlineDropdown
 									variant={null}
-									aria-label="More actions"
+									aria-label="更多操作"
 									renderAction={renderContextMenuAction}
 									getItems={getContextMenuItems}
 									style={NO_HOVER_BACKGROUND_STYLE}
@@ -667,14 +667,14 @@ const AssetSelectorItem: React.FC<{
 						>
 							<Spacing x={0.5} />
 							<ActionTooltip
-								label="More actions"
+								label="更多操作"
 								shortcut={null}
 								delay={800}
 								dismissOnClick
 							>
 								<InlineDropdown
 									variant={null}
-									aria-label="More actions"
+									aria-label="更多操作"
 									renderAction={renderContextMenuAction}
 									getItems={getContextMenuItems}
 									style={NO_HOVER_BACKGROUND_STYLE}

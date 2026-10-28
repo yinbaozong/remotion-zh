@@ -882,7 +882,7 @@ export const ElementInstallConfirmation: React.FC<{
 			<form onSubmit={onSubmit}>
 				<div style={dialogContent} className={VERTICAL_SCROLLBAR_CLASSNAME}>
 					<dl style={requestSourceStyle} aria-label="Request source">
-						<dt style={sectionTitleStyle}>From</dt>
+						<dt style={sectionTitleStyle}>起始</dt>
 						<dd
 							style={
 								sourceIsUnverified
@@ -901,15 +901,15 @@ export const ElementInstallConfirmation: React.FC<{
 						}}
 						aria-hidden={displayedPlan === null}
 					>
-						<dt style={sectionTitleStyle}>Destination</dt>
+						<dt style={sectionTitleStyle}>目标位置</dt>
 						<dd style={requestSourceDescriptionStyle}>
 							{displayedPlan?.filePath ?? '\u00A0'}
 						</dd>
 					</dl>
 
 					<div style={destinationControlStyle}>
-						<div style={sectionTitleStyle}>Add to</div>
-						<div aria-label="Add to" role="group" style={{marginLeft: 'auto'}}>
+						<div style={sectionTitleStyle}>添加到</div>
+						<div aria-label="添加到" role="group" style={{marginLeft: 'auto'}}>
 							<SegmentedControl
 								items={destinationOptions}
 								needsWrapping={false}
@@ -967,7 +967,7 @@ export const ElementInstallConfirmation: React.FC<{
 										setInput((previous) => ({...previous, overwritePlan: null}))
 									}
 								>
-									Create a copy
+									创建副本
 								</RadioButton>
 								{!overwriteExisting ? (
 									<div
@@ -984,7 +984,7 @@ export const ElementInstallConfirmation: React.FC<{
 											id="element-install-name"
 											name="installationName"
 											aria-label="Installation name"
-											placeholder="New name"
+											placeholder="新名称"
 											value={installationName}
 											disabled={submitting}
 											onChange={(event) => {
@@ -1049,7 +1049,7 @@ export const ElementInstallConfirmation: React.FC<{
 							aria-labelledby="element-install-dependencies"
 						>
 							<h3 id="element-install-dependencies" style={sectionTitleStyle}>
-								Packages to install
+								待安装依赖包
 							</h3>
 							<ul style={dependencyListStyle} role="list">
 								{missingPackages.map((packageName) => (
@@ -1075,7 +1075,7 @@ export const ElementInstallConfirmation: React.FC<{
 							className={`${HOVERABLE_CLASS_NAME} ${FOCUS_VISIBLE_ONLY_CLASS_NAME}`}
 							style={sourceSummaryStyle}
 						>
-							Source code
+							源代码
 						</summary>
 						<div style={sourceCodeContainerStyle}>
 							<pre

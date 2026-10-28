@@ -273,7 +273,7 @@ export const PreviewToolbarOverflowButton: React.FC<{
 
 	return (
 		<ActionTooltip
-			label="View options"
+			label="视图选项"
 			shortcut={null}
 			delay={800}
 			dismissOnClick
@@ -282,7 +282,7 @@ export const PreviewToolbarOverflowButton: React.FC<{
 				variant={null}
 				renderAction={renderAction}
 				values={values}
-				aria-label="More actions"
+				aria-label="更多操作"
 				unhoveredColor={WHITE_ALPHA_80}
 			/>
 		</ActionTooltip>

@@ -286,7 +286,7 @@ const ModelSettings: React.FC<{
 				label: (
 					<>
 						<span aria-hidden="true" style={nestedLabelStyle}>
-							Transcribe
+							转写
 						</span>
 						<span style={{position: 'absolute', clip: 'rect(0 0 0 0)'}}>
 							Task: Transcribe
@@ -959,7 +959,7 @@ export const TranscriptionModal: React.FC<TranscriptionModalState> = ({
 								: BLUE_DISABLED,
 						}}
 					>
-						{target === null ? 'Transcribe' : 'Generate captions'}
+						{target === null ? '转写' : '生成字幕'}
 					</Button>
 				</div>
 				<div style={transcriptionLayout}>
@@ -975,7 +975,7 @@ export const TranscriptionModal: React.FC<TranscriptionModalState> = ({
 								</div>
 							)}
 						>
-							Transcribe
+							转写
 						</VerticalTab>
 						{target === null ? null : (
 							<VerticalTab
@@ -1001,7 +1001,7 @@ export const TranscriptionModal: React.FC<TranscriptionModalState> = ({
 								</div>
 							)}
 						>
-							Models
+							模型
 						</VerticalTab>
 						<VerticalTab
 							style={horizontalTab}

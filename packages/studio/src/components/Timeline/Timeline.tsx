@@ -250,7 +250,7 @@ const TimelineContextMenuArea: React.FC<{
 			{
 				type: 'item',
 				id: 'insert-asset',
-				label: 'Add asset',
+				label: '添加素材',
 				value: 'insert-asset',
 				onClick: insertAsset,
 				keyHint: null,

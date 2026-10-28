@@ -142,7 +142,7 @@ export const UnsupportedStatus: React.FC<{
 					onBlur={() => setFocused(false)}
 					tabIndex={visible ? 0 : -1}
 				>
-					Fix
+					修复
 				</button>
 			) : null}
 		</span>

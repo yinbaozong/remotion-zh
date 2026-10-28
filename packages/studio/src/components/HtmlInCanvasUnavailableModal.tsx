@@ -128,7 +128,7 @@ export const HtmlInCanvasUnavailableModal: React.FC<{
 						autoFocus
 						buttonContainerStyle={buttonTextStyle}
 					>
-						Got it
+						知道了
 					</ModalButton>
 				</Row>
 			</ModalFooterContainer>

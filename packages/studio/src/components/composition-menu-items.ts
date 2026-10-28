@@ -310,7 +310,7 @@ export const getCompositionMenuItems = ({
 					leftItem: null,
 					disabled: !resolvedLocation?.source,
 					onClick: () => undefined,
-					quickSwitcherLabel: 'Component',
+					quickSwitcherLabel: '组件',
 					subMenu: {
 						items: componentOpenInMenuItems,
 						leaveLeftSpace: true,

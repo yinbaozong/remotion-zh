@@ -36,7 +36,7 @@ export const ResetZoomButton: React.FC<{
 			onPointerDown={onPointerDown}
 		>
 			<div className="css-reset" style={buttonContainer}>
-				Reset zoom
+				重置缩放
 			</div>
 		</button>
 	);

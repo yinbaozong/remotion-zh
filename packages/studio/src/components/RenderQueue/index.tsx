@@ -116,7 +116,7 @@ export const RenderQueue: React.FC = () => {
 			<div style={explainer}>
 				<Spacing y={5} />
 				<div style={errorExplanation}>
-					Renders, transcriptions and background removal jobs will show up here.
+					渲染、转写和背景移除任务会显示在这里。
 				</div>
 				<Spacing y={2} block />
 			</div>

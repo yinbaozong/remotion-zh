@@ -100,7 +100,7 @@ export const NoDefaultProps: React.FC<{
 	if (mode === 'compact') {
 		return (
 			<CompactSchemaError>
-				Add defaultProps to edit the schema.
+				添加 defaultProps 以编辑结构。
 			</CompactSchemaError>
 		);
 	}

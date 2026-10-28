@@ -197,7 +197,7 @@ export const useCompositionActions = () => {
 				from: null,
 				element: {
 					type: 'text',
-					text: 'Text',
+					text: '文字',
 					fontSize,
 					color: 'white',
 					position: {

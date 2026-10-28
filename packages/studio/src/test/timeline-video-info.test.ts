@@ -234,7 +234,7 @@ test('inspector asset source is derived from the src asset schema', () => {
 			src: {
 				type: 'asset',
 				default: undefined,
-				description: 'Source',
+				description: '源',
 				keyframable: false,
 			},
 		},

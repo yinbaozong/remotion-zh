@@ -15,7 +15,7 @@ export const getSidebarMenuItems = ({
 		{
 			id: `${side}-sidebar-responsive`,
 			keyHint: null,
-			label: 'Responsive',
+			label: '响应式',
 			leftItem: state === 'responsive' ? <Checkmark /> : null,
 			onClick: () => {
 				onStateChange('responsive');
@@ -28,7 +28,7 @@ export const getSidebarMenuItems = ({
 		{
 			id: side === 'left' ? 'left-sidebar-expanded' : 'sidebar-expanded',
 			keyHint: null,
-			label: 'Expanded',
+			label: '已展开',
 			leftItem: state === 'expanded' ? <Checkmark /> : null,
 			onClick: () => {
 				onStateChange('expanded');
@@ -41,7 +41,7 @@ export const getSidebarMenuItems = ({
 		{
 			id: `${side}-sidebar-collapsed`,
 			keyHint: null,
-			label: 'Collapsed',
+			label: '已折叠',
 			leftItem: state === 'collapsed' ? <Checkmark /> : null,
 			onClick: () => {
 				onStateChange('collapsed');

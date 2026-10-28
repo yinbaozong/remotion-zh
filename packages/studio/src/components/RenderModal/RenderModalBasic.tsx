@@ -231,7 +231,7 @@ export const RenderModalBasic: React.FC<{
 					outName={outName}
 					onValueChange={onValueChange}
 					validationMessage={validationMessage}
-					label={renderMode === 'sequence' ? 'Folder name' : 'Output name'}
+					label={renderMode === 'sequence' ? '文件夹名称' : '输出名称'}
 				/>
 			) : null}
 			<div style={optionRow}>

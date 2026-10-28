@@ -77,8 +77,8 @@ export const WrapperRefactorModal: React.FC<{readonly state: State}> = ({
 		requestCodexAnnotation({
 			target: annotationTarget.current,
 			initialComment: markupSkillAvailable
-				? `$remotion-markup ${state.type === 'unwrap-refactor' ? 'Unwrap' : 'Wrap'} this item.`
-				: `${state.type === 'unwrap-refactor' ? 'Unwrap' : 'Wrap'} this item.`,
+				? `$remotion-markup ${state.type === 'unwrap-refactor' ? '解除包裹' : '包裹'} this item.`
+				: `${state.type === 'unwrap-refactor' ? '解除包裹' : '包裹'} this item.`,
 			metadata: {
 				action: state.type === 'unwrap-refactor' ? 'Unwrap item' : 'Wrap item',
 				...(state.type === 'wrap-refactor'

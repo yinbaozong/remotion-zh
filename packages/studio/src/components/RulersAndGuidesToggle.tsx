@@ -52,7 +52,7 @@ export const RulersAndGuidesToggle: React.FC<{
 
 	return (
 		<ActionTooltip
-			label={showGuides ? 'Rulers and Guides' : '标尺'}
+			label={showGuides ? '标尺与参考线' : '标尺'}
 			shortcut={shortcutsDisabled ? null : shortcut}
 			delay={800}
 			dismissOnClick={false}

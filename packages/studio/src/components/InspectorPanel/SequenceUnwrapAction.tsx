@@ -75,7 +75,7 @@ export const SequenceUnwrapAction: React.FC<{
 			aria-label="Unwrap: remove this element and keep its children"
 			renderIcon={(color) => <UnwrapIcon color={color} style={iconStyle} />}
 		>
-			Unwrap
+			解除包裹
 		</InspectorQuickAction>
 	);
 };

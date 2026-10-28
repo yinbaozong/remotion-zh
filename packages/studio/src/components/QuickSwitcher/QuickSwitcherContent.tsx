@@ -528,13 +528,13 @@ export const QuickSwitcherContent: React.FC<{
 	const placeholder =
 		mode === 'assets'
 			? assetSelection?.fileTypes
-				? 'Search transcripts...'
-				: 'Search assets...'
+				? '搜索转写...'
+				: '搜索素材...'
 			: mode === 'commands'
-				? 'Search actions...'
+				? '搜索操作...'
 				: mode === 'docs'
-					? 'Search documentation...'
-					: 'Search compositions...';
+					? '搜索文档...'
+					: '搜索作品...';
 
 	return (
 		<div style={container}>
@@ -545,7 +545,7 @@ export const QuickSwitcherContent: React.FC<{
 						style={mode === 'compositions' ? modeActive : modeInactive}
 						type="button"
 					>
-						Compositions
+						作品
 					</button>
 					<Spacing x={1} />
 					<button
@@ -553,7 +553,7 @@ export const QuickSwitcherContent: React.FC<{
 						style={mode === 'assets' ? modeActive : modeInactive}
 						type="button"
 					>
-						Assets
+						素材
 					</button>
 					<Spacing x={1} />
 					<button
@@ -561,7 +561,7 @@ export const QuickSwitcherContent: React.FC<{
 						style={mode === 'commands' ? modeActive : modeInactive}
 						type="button"
 					>
-						Actions
+						操作
 					</button>
 					<Spacing x={1} />
 					<button
@@ -569,7 +569,7 @@ export const QuickSwitcherContent: React.FC<{
 						style={mode === 'docs' ? modeActive : modeInactive}
 						type="button"
 					>
-						Documentation
+						文档
 					</button>
 				</div>
 			)}

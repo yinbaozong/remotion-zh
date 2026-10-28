@@ -66,7 +66,7 @@ export const QueueJobErrorModal: React.FC<{
 			<ModalHeader title={title} />
 			<div style={container}>
 				<p style={description}>
-					The job failed because of the following error:
+					任务失败，错误如下：
 				</p>
 				<div className={HORIZONTAL_SCROLLBAR_CLASSNAME} style={codeBlock}>
 					{errorDetails}

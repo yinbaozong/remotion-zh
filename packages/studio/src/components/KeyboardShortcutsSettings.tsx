@@ -321,7 +321,7 @@ export const KeyboardShortcutsSettings: React.FC = () => {
 											{
 												id: 'remap-shortcut',
 												keyHint: null,
-												label: 'Remap shortcut',
+												label: '修改快捷键',
 												leftItem: null,
 												onClick: () => {
 													setError(null);
@@ -362,7 +362,7 @@ export const KeyboardShortcutsSettings: React.FC = () => {
 														{
 															id: 'disable-shortcut',
 															keyHint: null,
-															label: 'Disable shortcut',
+															label: '禁用快捷键',
 															leftItem: null,
 															onClick: () => {
 																setConfiguredShortcuts((current) => ({
@@ -467,7 +467,7 @@ export const KeyboardShortcutsSettings: React.FC = () => {
 													}}
 												>
 													{recording === shortcut.actionId ? (
-														<span style={emptyShortcut}>Press shortcut…</span>
+														<span style={emptyShortcut}>请按下快捷键…</span>
 													) : (
 														<ShortcutChords values={shortcutValues} />
 													)}

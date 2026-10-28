@@ -23,8 +23,8 @@ export const SnappingToggle: React.FC = () => {
 		useKeyboardShortcutAriaKeyShortcuts('toggleSnapping');
 
 	const accessibilityLabel = editorSnapping
-		? 'Disable snapping'
-		: 'Enable snapping';
+		? '关闭吸附'
+		: '启用吸附';
 	const shortcutsDisabled = areKeyboardShortcutsDisabled();
 
 	return (

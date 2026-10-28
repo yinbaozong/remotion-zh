@@ -194,9 +194,9 @@ export const MultiSequenceField: React.FC<{
 				label={
 					!staticValues
 						? statuses.some((status) => !status)
-							? 'Loading…'
+							? '加载中…'
 							: statuses.some((status) => status?.status === 'computed')
-								? 'Computed'
+								? '计算值'
 								: 'Keyframed'
 						: mixed
 							? 'Mixed'

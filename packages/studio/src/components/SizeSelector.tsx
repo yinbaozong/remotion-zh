@@ -48,7 +48,7 @@ const commonPreviewSizes: PreviewSize[] = [
 
 export const getPreviewSizeLabel = (previewSize: PreviewSize) => {
 	if (previewSize.size === 'auto') {
-		return 'Fit';
+		return '适应';
 	}
 
 	return `${(previewSize.size * 100).toFixed(0)}%`;

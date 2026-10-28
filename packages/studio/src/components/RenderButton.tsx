@@ -433,7 +433,7 @@ const RenderButtonInner: React.FC<{
 							type: 'item' as const,
 							id: 'server-render',
 							label: isBrowserStudio
-								? 'Server-side render...'
+								? '服务端渲染...'
 								: '服务端渲染',
 							value: 'server-render',
 							onClick: isBrowserStudio

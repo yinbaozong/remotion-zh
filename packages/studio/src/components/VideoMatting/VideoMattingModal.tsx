@@ -263,7 +263,7 @@ export const VideoMattingModal: React.FC<VideoMattingModalState> = ({
 								: BLUE_DISABLED,
 						}}
 					>
-						Remove background
+						移除背景
 					</Button>
 				</div>
 				<div style={modalLayout}>
@@ -291,7 +291,7 @@ export const VideoMattingModal: React.FC<VideoMattingModalState> = ({
 							selected={tab === 'models'}
 							style={horizontalTab}
 						>
-							Models
+							模型
 						</VerticalTab>
 					</div>
 					<div

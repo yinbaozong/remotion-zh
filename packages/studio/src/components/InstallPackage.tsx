@@ -281,13 +281,13 @@ export const InstallPackageSettings: React.FC<{
 								<Flex />
 								<ModalButton onClick={onClick} disabled={disabled}>
 									{state.type === 'restarting'
-										? 'Restarting...'
+										? '正在重启...'
 										: state.type === 'installing'
-											? 'Installing...'
+											? '正在安装...'
 											: state.type === 'done'
 												? packageManager === null
 													? '完成'
-													: 'Restart Server'
+													: '重启服务'
 												: 'Install'}
 									{disabled ? null : <ShortcutHint keyToPress="↵" cmdOrCtrl />}
 								</ModalButton>

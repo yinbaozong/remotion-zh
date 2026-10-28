@@ -118,7 +118,7 @@ export const SvgImportDialog: React.FC<{
 				<Row align="center">
 					<Flex />
 					<Button onClick={onImage}>
-						Add to <code style={inlineCode}>public</code> and import as{' '}
+						添加到 <code style={inlineCode}>public</code> and import as{' '}
 						<code style={inlineCode}>{'<CanvasImage>'}</code>
 					</Button>
 					<Spacing x={1} />

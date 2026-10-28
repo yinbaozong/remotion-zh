@@ -122,7 +122,7 @@ export const RenameStaticFileModal: React.FC<{
 									autoFocus
 									autoComplete="off"
 									data-1p-ignore
-									placeholder="Asset name"
+									placeholder="素材名称"
 									status={validationMessage ? 'error' : 'ok'}
 									rightAlign
 								/>
@@ -145,7 +145,7 @@ export const RenameStaticFileModal: React.FC<{
 						<Button onClick={() => setSelectedModal(null)}>取消</Button>
 						<Spacing x={1} />
 						<Button onClick={onRename} disabled={!valid || submitting}>
-							Rename
+							重命名
 						</Button>
 					</Row>
 				</ModalFooterContainer>

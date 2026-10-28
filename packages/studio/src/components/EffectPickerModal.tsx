@@ -353,7 +353,7 @@ const EffectPickerContent: React.FC<{
 						style={aboutEffectsLink}
 						className={HOVERABLE_CLASS_NAME}
 					>
-						<span style={aboutEffectsLabel}>About effects</span>
+						<span style={aboutEffectsLabel}>关于效果</span>
 						<ExternalLinkIcon
 							aria-hidden="true"
 							color={CURRENT_COLOR}

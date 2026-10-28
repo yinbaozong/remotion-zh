@@ -144,7 +144,7 @@ export const SkillSettingsRow: React.FC<{
 		skill.installedInProject && skill.installedGlobally
 			? 'Project and global'
 			: skill.installedInProject
-				? 'Project'
+				? '项目'
 				: skill.installedGlobally
 					? 'Global'
 					: null;
@@ -230,7 +230,7 @@ export const SkillSettingsRow: React.FC<{
 		const result: SegmentedButtonSegment[] = [];
 		if (canManageSkills) {
 			const actionLabel = upgradeAvailable
-				? 'Upgrade'
+				? '升级'
 				: installed
 					? '删除'
 					: '安装';
@@ -258,7 +258,7 @@ export const SkillSettingsRow: React.FC<{
 								<span
 									style={{fontSize: 12, lineHeight: '16px', color: 'inherit'}}
 								>
-									Upgrade
+									升级
 								</span>
 							) : null}
 						</>
@@ -360,7 +360,7 @@ export const SkillsSettings: React.FC = () => {
 	return (
 		<div style={container}>
 			{remotionSkillsInfo === null && error === null ? (
-				<p style={loading}>Checking installed skills...</p>
+				<p style={loading}>正在检查已安装技能...</p>
 			) : null}
 			{remotionSkillsInfo === null && error ? (
 				<div style={{marginTop: 14}}>

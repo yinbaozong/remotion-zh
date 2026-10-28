@@ -249,7 +249,7 @@ export const SequenceWrapAction: React.FC<{
 					<MotionBlurIcon color={color} style={largeInspectorActionIconStyle} />
 				)}
 			>
-				Motion blur
+				动态模糊
 			</InspectorQuickAction>
 		</>
 	);
